@@ -23,16 +23,16 @@ import (
 	"context"
 	"time"
 
-	"github.com/apache/incubator-answer/internal/service/activity_common"
-	"github.com/apache/incubator-answer/internal/service/follow"
-	"github.com/apache/incubator-answer/pkg/obj"
+	"github.com/Mark7631/incubator-answer/internal/service/activity_common"
+	"github.com/Mark7631/incubator-answer/internal/service/follow"
+	"github.com/Mark7631/incubator-answer/pkg/obj"
 	"github.com/segmentfault/pacman/log"
 	"xorm.io/builder"
 
-	"github.com/apache/incubator-answer/internal/base/data"
-	"github.com/apache/incubator-answer/internal/base/reason"
-	"github.com/apache/incubator-answer/internal/entity"
-	"github.com/apache/incubator-answer/internal/service/unique"
+	"github.com/Mark7631/incubator-answer/internal/base/data"
+	"github.com/Mark7631/incubator-answer/internal/base/reason"
+	"github.com/Mark7631/incubator-answer/internal/entity"
+	"github.com/Mark7631/incubator-answer/internal/service/unique"
 	"github.com/segmentfault/pacman/errors"
 	"xorm.io/xorm"
 )

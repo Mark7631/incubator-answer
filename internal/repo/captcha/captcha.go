@@ -25,10 +25,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/apache/incubator-answer/internal/base/data"
-	"github.com/apache/incubator-answer/internal/base/reason"
-	"github.com/apache/incubator-answer/internal/entity"
-	"github.com/apache/incubator-answer/internal/service/action"
+	"github.com/Mark7631/incubator-answer/internal/base/data"
+	"github.com/Mark7631/incubator-answer/internal/base/reason"
+	"github.com/Mark7631/incubator-answer/internal/entity"
+	"github.com/Mark7631/incubator-answer/internal/service/action"
 	"github.com/segmentfault/pacman/errors"
 	"github.com/segmentfault/pacman/log"
 )

@@ -22,8 +22,8 @@ package meta
 import (
 	"context"
 
-	"github.com/apache/incubator-answer/internal/base/reason"
-	"github.com/apache/incubator-answer/internal/entity"
+	"github.com/Mark7631/incubator-answer/internal/base/reason"
+	"github.com/Mark7631/incubator-answer/internal/entity"
 	"github.com/segmentfault/pacman/errors"
 )
 

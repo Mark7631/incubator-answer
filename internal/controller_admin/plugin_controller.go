@@ -22,10 +22,10 @@ package controller_admin
 import (
 	"encoding/json"
 
-	"github.com/apache/incubator-answer/internal/base/handler"
-	"github.com/apache/incubator-answer/internal/schema"
-	"github.com/apache/incubator-answer/internal/service/plugin_common"
-	"github.com/apache/incubator-answer/plugin"
+	"github.com/Mark7631/incubator-answer/internal/base/handler"
+	"github.com/Mark7631/incubator-answer/internal/schema"
+	"github.com/Mark7631/incubator-answer/internal/service/plugin_common"
+	"github.com/Mark7631/incubator-answer/plugin"
 	"github.com/gin-gonic/gin"
 )
 

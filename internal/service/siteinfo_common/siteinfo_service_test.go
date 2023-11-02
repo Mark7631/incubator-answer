@@ -23,9 +23,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/apache/incubator-answer/internal/base/constant"
-	"github.com/apache/incubator-answer/internal/entity"
-	"github.com/apache/incubator-answer/internal/service/mock"
+	"github.com/Mark7631/incubator-answer/internal/base/constant"
+	"github.com/Mark7631/incubator-answer/internal/entity"
+	"github.com/Mark7631/incubator-answer/internal/service/mock"
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/assert"
 )

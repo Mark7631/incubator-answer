@@ -23,13 +23,13 @@ import (
 	"context"
 	"time"
 
-	"github.com/apache/incubator-answer/internal/base/data"
-	"github.com/apache/incubator-answer/internal/base/pager"
-	"github.com/apache/incubator-answer/internal/base/reason"
-	"github.com/apache/incubator-answer/internal/entity"
-	"github.com/apache/incubator-answer/internal/schema"
-	notficationcommon "github.com/apache/incubator-answer/internal/service/notification_common"
-	"github.com/apache/incubator-answer/pkg/uid"
+	"github.com/Mark7631/incubator-answer/internal/base/data"
+	"github.com/Mark7631/incubator-answer/internal/base/pager"
+	"github.com/Mark7631/incubator-answer/internal/base/reason"
+	"github.com/Mark7631/incubator-answer/internal/entity"
+	"github.com/Mark7631/incubator-answer/internal/schema"
+	notficationcommon "github.com/Mark7631/incubator-answer/internal/service/notification_common"
+	"github.com/Mark7631/incubator-answer/pkg/uid"
 	"github.com/segmentfault/pacman/errors"
 )
 

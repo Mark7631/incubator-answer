@@ -24,10 +24,10 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/apache/incubator-answer/configs"
-	"github.com/apache/incubator-answer/i18n"
-	"github.com/apache/incubator-answer/pkg/dir"
-	"github.com/apache/incubator-answer/pkg/writer"
+	"github.com/Mark7631/incubator-answer/configs"
+	"github.com/Mark7631/incubator-answer/i18n"
+	"github.com/Mark7631/incubator-answer/pkg/dir"
+	"github.com/Mark7631/incubator-answer/pkg/writer"
 )
 
 const (

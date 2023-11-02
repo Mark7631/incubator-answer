@@ -22,10 +22,10 @@ package role
 import (
 	"context"
 
-	"github.com/apache/incubator-answer/internal/base/data"
-	"github.com/apache/incubator-answer/internal/base/reason"
-	"github.com/apache/incubator-answer/internal/entity"
-	service "github.com/apache/incubator-answer/internal/service/role"
+	"github.com/Mark7631/incubator-answer/internal/base/data"
+	"github.com/Mark7631/incubator-answer/internal/base/reason"
+	"github.com/Mark7631/incubator-answer/internal/entity"
+	service "github.com/Mark7631/incubator-answer/internal/service/role"
 	"github.com/segmentfault/pacman/errors"
 )
 

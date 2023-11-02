@@ -8,8 +8,8 @@ import (
 	context "context"
 	reflect "reflect"
 
-	entity "github.com/apache/incubator-answer/internal/entity"
-	schema "github.com/apache/incubator-answer/internal/schema"
+	entity "github.com/Mark7631/incubator-answer/internal/entity"
+	schema "github.com/Mark7631/incubator-answer/internal/schema"
 	gomock "github.com/golang/mock/gomock"
 )
 

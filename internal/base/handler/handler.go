@@ -21,9 +21,9 @@ package handler
 
 import (
 	"errors"
-	"github.com/apache/incubator-answer/internal/base/constant"
-	"github.com/apache/incubator-answer/internal/base/reason"
-	"github.com/apache/incubator-answer/internal/base/validator"
+	"github.com/Mark7631/incubator-answer/internal/base/constant"
+	"github.com/Mark7631/incubator-answer/internal/base/reason"
+	"github.com/Mark7631/incubator-answer/internal/base/validator"
 	"github.com/gin-gonic/gin"
 	myErrors "github.com/segmentfault/pacman/errors"
 	"github.com/segmentfault/pacman/log"

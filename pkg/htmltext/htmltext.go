@@ -21,7 +21,7 @@ package htmltext
 
 import (
 	"github.com/Chain-Zhang/pinyin"
-	"github.com/apache/incubator-answer/pkg/checker"
+	"github.com/Mark7631/incubator-answer/pkg/checker"
 	"io"
 	"net/http"
 	"net/url"

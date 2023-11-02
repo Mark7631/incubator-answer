@@ -21,13 +21,13 @@ package notification
 
 import (
 	"context"
-	"github.com/apache/incubator-answer/internal/base/data"
-	"github.com/apache/incubator-answer/internal/schema"
-	"github.com/apache/incubator-answer/internal/service/activity_common"
-	"github.com/apache/incubator-answer/internal/service/export"
-	"github.com/apache/incubator-answer/internal/service/notice_queue"
-	usercommon "github.com/apache/incubator-answer/internal/service/user_common"
-	"github.com/apache/incubator-answer/internal/service/user_notification_config"
+	"github.com/Mark7631/incubator-answer/internal/base/data"
+	"github.com/Mark7631/incubator-answer/internal/schema"
+	"github.com/Mark7631/incubator-answer/internal/service/activity_common"
+	"github.com/Mark7631/incubator-answer/internal/service/export"
+	"github.com/Mark7631/incubator-answer/internal/service/notice_queue"
+	usercommon "github.com/Mark7631/incubator-answer/internal/service/user_common"
+	"github.com/Mark7631/incubator-answer/internal/service/user_notification_config"
 	"github.com/segmentfault/pacman/log"
 )
 

@@ -22,14 +22,14 @@ package search_parser
 import (
 	"context"
 	"fmt"
-	"github.com/apache/incubator-answer/internal/base/constant"
+	"github.com/Mark7631/incubator-answer/internal/base/constant"
 	"regexp"
 	"strings"
 
-	"github.com/apache/incubator-answer/internal/schema"
-	"github.com/apache/incubator-answer/internal/service/tag_common"
-	usercommon "github.com/apache/incubator-answer/internal/service/user_common"
-	"github.com/apache/incubator-answer/pkg/converter"
+	"github.com/Mark7631/incubator-answer/internal/schema"
+	"github.com/Mark7631/incubator-answer/internal/service/tag_common"
+	usercommon "github.com/Mark7631/incubator-answer/internal/service/user_common"
+	"github.com/Mark7631/incubator-answer/pkg/converter"
 )
 
 type SearchParser struct {

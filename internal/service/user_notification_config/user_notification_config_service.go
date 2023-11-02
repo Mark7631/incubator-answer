@@ -21,10 +21,10 @@ package user_notification_config
 
 import (
 	"context"
-	"github.com/apache/incubator-answer/internal/base/constant"
-	"github.com/apache/incubator-answer/internal/entity"
-	"github.com/apache/incubator-answer/internal/schema"
-	usercommon "github.com/apache/incubator-answer/internal/service/user_common"
+	"github.com/Mark7631/incubator-answer/internal/base/constant"
+	"github.com/Mark7631/incubator-answer/internal/entity"
+	"github.com/Mark7631/incubator-answer/internal/schema"
+	usercommon "github.com/Mark7631/incubator-answer/internal/service/user_common"
 )
 
 type UserNotificationConfigRepo interface {

@@ -20,17 +20,17 @@
 package controller
 
 import (
-	"github.com/apache/incubator-answer/internal/base/handler"
-	"github.com/apache/incubator-answer/internal/base/middleware"
-	"github.com/apache/incubator-answer/internal/base/reason"
-	"github.com/apache/incubator-answer/internal/base/translator"
-	"github.com/apache/incubator-answer/internal/base/validator"
-	"github.com/apache/incubator-answer/internal/entity"
-	"github.com/apache/incubator-answer/internal/schema"
-	"github.com/apache/incubator-answer/internal/service"
-	"github.com/apache/incubator-answer/internal/service/action"
-	"github.com/apache/incubator-answer/internal/service/rank"
-	"github.com/apache/incubator-answer/pkg/uid"
+	"github.com/Mark7631/incubator-answer/internal/base/handler"
+	"github.com/Mark7631/incubator-answer/internal/base/middleware"
+	"github.com/Mark7631/incubator-answer/internal/base/reason"
+	"github.com/Mark7631/incubator-answer/internal/base/translator"
+	"github.com/Mark7631/incubator-answer/internal/base/validator"
+	"github.com/Mark7631/incubator-answer/internal/entity"
+	"github.com/Mark7631/incubator-answer/internal/schema"
+	"github.com/Mark7631/incubator-answer/internal/service"
+	"github.com/Mark7631/incubator-answer/internal/service/action"
+	"github.com/Mark7631/incubator-answer/internal/service/rank"
+	"github.com/Mark7631/incubator-answer/pkg/uid"
 	"github.com/gin-gonic/gin"
 	"github.com/segmentfault/pacman/errors"
 )

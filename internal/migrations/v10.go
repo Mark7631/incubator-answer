@@ -24,9 +24,9 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/apache/incubator-answer/internal/base/constant"
-	"github.com/apache/incubator-answer/internal/entity"
-	"github.com/apache/incubator-answer/internal/schema"
+	"github.com/Mark7631/incubator-answer/internal/base/constant"
+	"github.com/Mark7631/incubator-answer/internal/entity"
+	"github.com/Mark7631/incubator-answer/internal/schema"
 	"github.com/tidwall/gjson"
 	"xorm.io/xorm"
 )

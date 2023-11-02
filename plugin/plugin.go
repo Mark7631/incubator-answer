@@ -22,8 +22,8 @@ package plugin
 import (
 	"encoding/json"
 
-	"github.com/apache/incubator-answer/internal/base/handler"
-	"github.com/apache/incubator-answer/internal/base/translator"
+	"github.com/Mark7631/incubator-answer/internal/base/handler"
+	"github.com/Mark7631/incubator-answer/internal/base/translator"
 	"github.com/gin-gonic/gin"
 )
 

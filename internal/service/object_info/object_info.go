@@ -22,16 +22,16 @@ package object_info
 import (
 	"context"
 
-	"github.com/apache/incubator-answer/internal/base/constant"
-	"github.com/apache/incubator-answer/internal/base/handler"
-	"github.com/apache/incubator-answer/internal/base/reason"
-	"github.com/apache/incubator-answer/internal/schema"
-	answercommon "github.com/apache/incubator-answer/internal/service/answer_common"
-	"github.com/apache/incubator-answer/internal/service/comment_common"
-	questioncommon "github.com/apache/incubator-answer/internal/service/question_common"
-	tagcommon "github.com/apache/incubator-answer/internal/service/tag_common"
-	"github.com/apache/incubator-answer/pkg/obj"
-	"github.com/apache/incubator-answer/pkg/uid"
+	"github.com/Mark7631/incubator-answer/internal/base/constant"
+	"github.com/Mark7631/incubator-answer/internal/base/handler"
+	"github.com/Mark7631/incubator-answer/internal/base/reason"
+	"github.com/Mark7631/incubator-answer/internal/schema"
+	answercommon "github.com/Mark7631/incubator-answer/internal/service/answer_common"
+	"github.com/Mark7631/incubator-answer/internal/service/comment_common"
+	questioncommon "github.com/Mark7631/incubator-answer/internal/service/question_common"
+	tagcommon "github.com/Mark7631/incubator-answer/internal/service/tag_common"
+	"github.com/Mark7631/incubator-answer/pkg/obj"
+	"github.com/Mark7631/incubator-answer/pkg/uid"
 	"github.com/segmentfault/pacman/errors"
 )
 

@@ -20,11 +20,11 @@
 package report
 
 import (
-	"github.com/apache/incubator-answer/internal/entity"
-	"github.com/apache/incubator-answer/internal/schema"
-	"github.com/apache/incubator-answer/internal/service/object_info"
-	"github.com/apache/incubator-answer/internal/service/report_common"
-	"github.com/apache/incubator-answer/pkg/obj"
+	"github.com/Mark7631/incubator-answer/internal/entity"
+	"github.com/Mark7631/incubator-answer/internal/schema"
+	"github.com/Mark7631/incubator-answer/internal/service/object_info"
+	"github.com/Mark7631/incubator-answer/internal/service/report_common"
+	"github.com/Mark7631/incubator-answer/pkg/obj"
 	"golang.org/x/net/context"
 )
 

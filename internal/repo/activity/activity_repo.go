@@ -22,12 +22,12 @@ package activity
 import (
 	"context"
 
-	"github.com/apache/incubator-answer/internal/base/data"
-	"github.com/apache/incubator-answer/internal/base/reason"
-	"github.com/apache/incubator-answer/internal/entity"
-	"github.com/apache/incubator-answer/internal/service/activity"
-	"github.com/apache/incubator-answer/internal/service/activity_type"
-	"github.com/apache/incubator-answer/internal/service/config"
+	"github.com/Mark7631/incubator-answer/internal/base/data"
+	"github.com/Mark7631/incubator-answer/internal/base/reason"
+	"github.com/Mark7631/incubator-answer/internal/entity"
+	"github.com/Mark7631/incubator-answer/internal/service/activity"
+	"github.com/Mark7631/incubator-answer/internal/service/activity_type"
+	"github.com/Mark7631/incubator-answer/internal/service/config"
 	"github.com/segmentfault/pacman/errors"
 	"github.com/segmentfault/pacman/log"
 )

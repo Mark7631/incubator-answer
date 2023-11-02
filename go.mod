@@ -1,4 +1,4 @@
-module github.com/apache/incubator-answer
+module github.com/Mark7631/incubator-answer
 
 go 1.18
 
@@ -74,6 +74,7 @@ require (
 	github.com/golang/freetype v0.0.0-20170609003504-e2365dfdc4a0 // indirect
 	github.com/golang/geo v0.0.0-20190812012225-f41920e961ce // indirect
 	github.com/golang/snappy v0.0.4 // indirect
+	github.com/google/subcommands v1.0.1 // indirect
 	github.com/gorilla/css v1.0.0 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
 	github.com/inconshreveable/mousetrap v1.0.1 // indirect

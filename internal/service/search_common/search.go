@@ -21,8 +21,8 @@ package search_common
 
 import (
 	"context"
-	"github.com/apache/incubator-answer/internal/schema"
-	"github.com/apache/incubator-answer/plugin"
+	"github.com/Mark7631/incubator-answer/internal/schema"
+	"github.com/Mark7631/incubator-answer/plugin"
 )
 
 type SearchRepo interface {

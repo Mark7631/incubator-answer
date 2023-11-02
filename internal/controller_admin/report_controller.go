@@ -20,10 +20,10 @@
 package controller_admin
 
 import (
-	"github.com/apache/incubator-answer/internal/base/handler"
-	"github.com/apache/incubator-answer/internal/schema"
-	"github.com/apache/incubator-answer/internal/service/report_admin"
-	"github.com/apache/incubator-answer/pkg/converter"
+	"github.com/Mark7631/incubator-answer/internal/base/handler"
+	"github.com/Mark7631/incubator-answer/internal/schema"
+	"github.com/Mark7631/incubator-answer/internal/service/report_admin"
+	"github.com/Mark7631/incubator-answer/pkg/converter"
 	"github.com/gin-gonic/gin"
 )
 

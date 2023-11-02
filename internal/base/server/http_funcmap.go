@@ -27,12 +27,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/apache/incubator-answer/internal/base/translator"
-	"github.com/apache/incubator-answer/internal/controller"
-	"github.com/apache/incubator-answer/internal/schema"
-	"github.com/apache/incubator-answer/pkg/converter"
-	"github.com/apache/incubator-answer/pkg/day"
-	"github.com/apache/incubator-answer/pkg/htmltext"
+	"github.com/Mark7631/incubator-answer/internal/base/translator"
+	"github.com/Mark7631/incubator-answer/internal/controller"
+	"github.com/Mark7631/incubator-answer/internal/schema"
+	"github.com/Mark7631/incubator-answer/pkg/converter"
+	"github.com/Mark7631/incubator-answer/pkg/day"
+	"github.com/Mark7631/incubator-answer/pkg/htmltext"
 	"github.com/segmentfault/pacman/i18n"
 )
 

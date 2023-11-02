@@ -23,10 +23,10 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"github.com/apache/incubator-answer/internal/schema"
+	"github.com/Mark7631/incubator-answer/internal/schema"
 	"github.com/segmentfault/pacman/log"
 
-	"github.com/apache/incubator-answer/internal/entity"
+	"github.com/Mark7631/incubator-answer/internal/entity"
 	"golang.org/x/crypto/bcrypt"
 	"xorm.io/xorm"
 )

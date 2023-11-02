@@ -25,9 +25,9 @@ import (
 	"path/filepath"
 	"sync"
 
-	"github.com/apache/incubator-answer/configs"
-	"github.com/apache/incubator-answer/internal/cli"
-	"github.com/apache/incubator-answer/pkg/dir"
+	"github.com/Mark7631/incubator-answer/configs"
+	"github.com/Mark7631/incubator-answer/internal/cli"
+	"github.com/Mark7631/incubator-answer/pkg/dir"
 )
 
 var (

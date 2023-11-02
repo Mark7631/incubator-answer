@@ -20,7 +20,7 @@
 package router
 
 import (
-	"github.com/apache/incubator-answer/internal/service/service_config"
+	"github.com/Mark7631/incubator-answer/internal/service/service_config"
 	"github.com/gin-gonic/gin"
 )
 

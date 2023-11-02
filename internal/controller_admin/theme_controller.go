@@ -20,8 +20,8 @@
 package controller_admin
 
 import (
-	"github.com/apache/incubator-answer/internal/base/handler"
-	"github.com/apache/incubator-answer/internal/schema"
+	"github.com/Mark7631/incubator-answer/internal/base/handler"
+	"github.com/Mark7631/incubator-answer/internal/schema"
 	"github.com/gin-gonic/gin"
 )
 

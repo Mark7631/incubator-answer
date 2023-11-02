@@ -21,11 +21,11 @@ package permission
 
 import (
 	"context"
-	"github.com/apache/incubator-answer/internal/entity"
+	"github.com/Mark7631/incubator-answer/internal/entity"
 
-	"github.com/apache/incubator-answer/internal/base/handler"
-	"github.com/apache/incubator-answer/internal/base/translator"
-	"github.com/apache/incubator-answer/internal/schema"
+	"github.com/Mark7631/incubator-answer/internal/base/handler"
+	"github.com/Mark7631/incubator-answer/internal/base/translator"
+	"github.com/Mark7631/incubator-answer/internal/schema"
 )
 
 // GetTagPermission get tag permission

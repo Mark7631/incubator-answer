@@ -24,17 +24,17 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/apache/incubator-answer/internal/entity"
-	"github.com/apache/incubator-answer/internal/service/activity_common"
-	"github.com/apache/incubator-answer/internal/service/activity_type"
-	"github.com/apache/incubator-answer/pkg/obj"
+	"github.com/Mark7631/incubator-answer/internal/entity"
+	"github.com/Mark7631/incubator-answer/internal/service/activity_common"
+	"github.com/Mark7631/incubator-answer/internal/service/activity_type"
+	"github.com/Mark7631/incubator-answer/pkg/obj"
 	"xorm.io/builder"
 	"xorm.io/xorm"
 
-	"github.com/apache/incubator-answer/internal/base/data"
-	"github.com/apache/incubator-answer/internal/base/reason"
-	"github.com/apache/incubator-answer/internal/service/config"
-	"github.com/apache/incubator-answer/internal/service/unique"
+	"github.com/Mark7631/incubator-answer/internal/base/data"
+	"github.com/Mark7631/incubator-answer/internal/base/reason"
+	"github.com/Mark7631/incubator-answer/internal/service/config"
+	"github.com/Mark7631/incubator-answer/internal/service/unique"
 	"github.com/segmentfault/pacman/errors"
 )
 

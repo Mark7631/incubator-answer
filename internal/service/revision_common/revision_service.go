@@ -22,15 +22,15 @@ package revision_common
 import (
 	"context"
 
-	"github.com/apache/incubator-answer/internal/base/reason"
-	"github.com/apache/incubator-answer/internal/service/revision"
-	usercommon "github.com/apache/incubator-answer/internal/service/user_common"
-	"github.com/apache/incubator-answer/pkg/uid"
+	"github.com/Mark7631/incubator-answer/internal/base/reason"
+	"github.com/Mark7631/incubator-answer/internal/service/revision"
+	usercommon "github.com/Mark7631/incubator-answer/internal/service/user_common"
+	"github.com/Mark7631/incubator-answer/pkg/uid"
 	"github.com/segmentfault/pacman/errors"
 	"github.com/segmentfault/pacman/log"
 
-	"github.com/apache/incubator-answer/internal/entity"
-	"github.com/apache/incubator-answer/internal/schema"
+	"github.com/Mark7631/incubator-answer/internal/entity"
+	"github.com/Mark7631/incubator-answer/internal/schema"
 	"github.com/jinzhu/copier"
 )
 

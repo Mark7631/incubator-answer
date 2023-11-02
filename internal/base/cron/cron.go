@@ -23,8 +23,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/apache/incubator-answer/internal/service"
-	"github.com/apache/incubator-answer/internal/service/siteinfo_common"
+	"github.com/Mark7631/incubator-answer/internal/service"
+	"github.com/Mark7631/incubator-answer/internal/service/siteinfo_common"
 	"github.com/robfig/cron/v3"
 	"github.com/segmentfault/pacman/log"
 )

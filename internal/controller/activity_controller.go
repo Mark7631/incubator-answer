@@ -20,12 +20,12 @@
 package controller
 
 import (
-	"github.com/apache/incubator-answer/internal/base/handler"
-	"github.com/apache/incubator-answer/internal/base/middleware"
-	"github.com/apache/incubator-answer/internal/schema"
-	"github.com/apache/incubator-answer/internal/service/activity"
-	"github.com/apache/incubator-answer/internal/service/role"
-	"github.com/apache/incubator-answer/pkg/uid"
+	"github.com/Mark7631/incubator-answer/internal/base/handler"
+	"github.com/Mark7631/incubator-answer/internal/base/middleware"
+	"github.com/Mark7631/incubator-answer/internal/schema"
+	"github.com/Mark7631/incubator-answer/internal/service/activity"
+	"github.com/Mark7631/incubator-answer/internal/service/role"
+	"github.com/Mark7631/incubator-answer/pkg/uid"
 	"github.com/gin-gonic/gin"
 )
 
