@@ -24,7 +24,7 @@ ENV GOPROXY=https://proxy.golang.com.cn,direct
 
 ENV GOPATH /go
 ENV GOROOT /usr/local/go
-ENV PACKAGE github.com/apache/incubator-answer
+ENV PACKAGE github.com/Mark7631/incubator-answer
 ENV BUILD_DIR ${GOPATH}/src/${PACKAGE}
 ENV ANSWER_MODULE ${BUILD_DIR}
 
