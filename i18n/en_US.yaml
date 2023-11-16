@@ -850,6 +850,7 @@ ui:
       review: Review
       bookmark: Bookmarks
       moderation: Moderation
+      articles: Articles
     search:
       placeholder: Search
   footer:
