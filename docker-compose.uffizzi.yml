@@ -26,13 +26,13 @@ x-uffizzi:
 services:
 
   answer:
-    image: "${ANSWER_IMAGE}"
+    image: incubatoranswer:latest
     environment:
       - AUTO_INSTALL=true
       - DB_TYPE=mysql
       - DB_USERNAME=root
       - DB_PASSWORD=password
-      - DB_HOST=127.0.0.1:3306
+      - DB_HOST=172.19.0.2:3306
       - DB_NAME=answer
       - LANGUAGE=en_US
       - SITE_NAME=answer-test
@@ -47,7 +47,7 @@ services:
       mysql:
         condition: service_healthy
     links:
-      - db
+      - mysql:latest
     deploy:
       resources:
         limits:

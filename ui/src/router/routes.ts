@@ -111,6 +111,56 @@ const routes: RouteNode[] = [
             path: '/search',
             page: 'pages/Search',
           },
+          // articles
+          {
+            index: true,
+            page: 'pages/Articles',
+          },
+          {
+            path: 'articles',
+            page: 'pages/Articles',
+          },
+          {
+            path: 'articles/ask',
+            page: 'pages/Articles/Ask',
+            guard: () => {
+              return guard.activated();
+            },
+          },
+          {
+            path: 'posts/:qid/edit',
+            page: 'pages/Articles/Ask',
+            guard: () => {
+              return guard.activated();
+            },
+          },
+          {
+            path: 'posts/:qid/:aid/edit',
+            page: 'pages/Articles/EditAnswer',
+            loader: async ({ params }) => {
+              const ret = await editCheck(params.aid as string, true);
+              return ret;
+            },
+            guard: (args) => {
+              return isEditable(args);
+            },
+          },
+          {
+            path: 'articles/:qid',
+            page: 'pages/Articles/Detail',
+          },
+          {
+            path: 'articles/:qid/:slugPermalink',
+            page: 'pages/Articles/Detail',
+          },
+          {
+            path: 'articles/:qid/:slugPermalink/:aid',
+            page: 'pages/Articles/Detail',
+          },
+          {
+            path: '/search',
+            page: 'pages/Search',
+          },
           // tags
           {
             path: 'tags',

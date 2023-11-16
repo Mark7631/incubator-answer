@@ -73,6 +73,15 @@ const Index: FC = () => {
             <span>{t('header.nav.user')}</span>
           </NavLink>
 
+          <NavLink
+            to="/articles"
+            className={({ isActive }) =>
+              isActive || pathname === '/' ? 'nav-link active' : 'nav-link'
+            }>
+            <Icon name="question-circle-fill" className="me-2" />
+            <span>{t('header.nav.articles')}</span>
+          </NavLink>
+
           {can_revision || userInfo?.role_id === 2 ? (
             <>
               <div className="py-2 px-3 mt-3 small fw-bold">
