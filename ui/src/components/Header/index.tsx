@@ -71,7 +71,6 @@ const Header: FC = () => {
    */
   const tagMatch = useMatch('/tags/:slugName');
   let askUrl = '/questions/ask';
-  let writeUrl = '/articles/ask';
   if (tagMatch && tagMatch.params.slugName) {
     askUrl = `${askUrl}?tags=${tagMatch.params.slugName}`;
   }
@@ -239,7 +238,7 @@ const Header: FC = () => {
 
                 <Nav.Item className="me-3">
                   <Link
-                    to={writeUrl}
+                    to={askUrl}
                     className={classnames('text-capitalize text-nowrap btn', {
                       'btn-light': navbarStyle !== 'theme-light',
                       'btn-primary': navbarStyle === 'theme-light',
