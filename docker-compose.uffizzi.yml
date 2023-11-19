@@ -32,7 +32,7 @@ services:
       - DB_TYPE=mysql
       - DB_USERNAME=root
       - DB_PASSWORD=password
-      - DB_HOST=172.19.0.2:3306
+      - DB_HOST=172.24.0.2:3306
       - DB_NAME=answer
       - LANGUAGE=en_US
       - SITE_NAME=answer-test

@@ -73,12 +73,8 @@ const Index: FC = () => {
             <span>{t('header.nav.user')}</span>
           </NavLink>
 
-          <NavLink
-            to="/articles"
-            className={({ isActive }) =>
-              isActive || pathname === '/' ? 'nav-link active' : 'nav-link'
-            }>
-            <Icon name="question-circle-fill" className="me-2" />
+          <NavLink to="/articles" className="nav-link">
+            <Icon name="people-fill" className="me-2" />
             <span>{t('header.nav.articles')}</span>
           </NavLink>
 
