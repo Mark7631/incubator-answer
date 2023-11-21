@@ -17,63 +17,174 @@
  * under the License.
  */
 
-import { FC } from 'react';
-import { Row, Col } from 'react-bootstrap';
-import { useMatch, Link, useSearchParams } from 'react-router-dom';
+import { FC, useEffect, useState } from 'react';
+import { Row, Col, Button } from 'react-bootstrap';
+import {
+  useParams,
+  Link,
+  useNavigate,
+  useSearchParams,
+} from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 import { usePageTags } from '@/hooks';
-import {
-  FollowingTags,
-  QuestionList,
-  HotQuestions,
-  CustomSidebar,
-} from '@/components';
-import {
-  siteInfoStore,
-  loggedUserInfoStore,
-  loginSettingStore,
-} from '@/stores';
-import { useQuestionList } from '@/services';
 import * as Type from '@/common/interface';
-import { userCenter, floppyNavigation, Storage } from '@/utils';
+import { FollowingTags, CustomSidebar, Icon } from '@/components';
+import {
+  useTagInfo,
+  useFollow,
+  useQuerySynonymsTags,
+  useQuestionList,
+} from '@/services';
+import QuestionList, { QUESTION_ORDER_KEYS } from '@/components/QuestionList';
+import HotQuestions from '@/components/HotQuestions';
+import { escapeRemove, guard, Storage, scrollToDocTop } from '@/utils';
+import { pathFactory } from '@/router/pathFactory';
 import { QUESTIONS_ORDER_STORAGE_KEY } from '@/common/constants';
-import { QUESTION_ORDER_KEYS } from '@/components/QuestionList';
 
-const Questions: FC = () => {
-  const { t } = useTranslation('translation', { keyPrefix: 'question' });
-  const { t: t2 } = useTranslation('translation');
-  const { user: loggedUser } = loggedUserInfoStore((_) => _);
+const Index: FC = () => {
+  const { t } = useTranslation('translation', { keyPrefix: 'tags' });
+  const navigate = useNavigate();
+  const routeParams = useParams();
+  const curTagName = routeParams.tagName || '';
   const [urlSearchParams] = useSearchParams();
-  const curPage = Number(urlSearchParams.get('page')) || 1;
   const storageOrder = Storage.get(QUESTIONS_ORDER_STORAGE_KEY);
   const curOrder =
     urlSearchParams.get('order') || storageOrder || QUESTION_ORDER_KEYS[0];
   if (curOrder !== storageOrder) {
     Storage.set(QUESTIONS_ORDER_STORAGE_KEY, curOrder);
   }
+  const curPage = Number(urlSearchParams.get('page')) || 1;
   const reqParams: Type.QueryQuestionsReq = {
     page_size: 20,
     page: curPage,
     order: curOrder as Type.QuestionOrderBy,
+    tag: 'question',
   };
+  const [tagInfo, setTagInfo] = useState<any>({});
+  const [tagFollow, setTagFollow] = useState<Type.FollowParams>();
+  const { data: tagResp, isLoading } = useTagInfo({ name: curTagName });
   const { data: listData, isLoading: listLoading } = useQuestionList(reqParams);
-  const isIndexPage = useMatch('/');
-  let pageTitle = t('questions', { keyPrefix: 'page_title' });
-  let slogan = '';
-  const { siteInfo } = siteInfoStore();
-  if (isIndexPage) {
-    pageTitle = `${siteInfo.name}`;
-    slogan = `${siteInfo.short_description}`;
-  }
-  const { login: loginSetting } = loginSettingStore();
+  const { data: followResp } = useFollow(tagFollow);
+  const { data: synonymsRes } = useQuerySynonymsTags(
+    tagInfo?.tag_id,
+    tagInfo?.status,
+  );
+  const toggleFollow = () => {
+    if (!guard.tryNormalLogged(true)) {
+      return;
+    }
+    setTagFollow({
+      is_cancel: tagInfo.is_follower,
+      object_id: tagInfo.tag_id,
+    });
+  };
 
-  usePageTags({ title: pageTitle, subtitle: slogan });
+  useEffect(() => {
+    if (!listLoading) {
+      scrollToDocTop();
+    }
+  }, [listLoading]);
+
+  useEffect(() => {
+    if (tagResp) {
+      const info = { ...tagResp };
+      if (info.main_tag_slug_name) {
+        navigate(pathFactory.tagLanding(info.main_tag_slug_name), {
+          replace: true,
+        });
+        return;
+      }
+      if (followResp) {
+        info.is_follower = followResp.is_followed;
+      }
+
+      if (info.excerpt) {
+        info.excerpt =
+          info.excerpt.length > 256
+            ? [...info.excerpt].slice(0, 256).join('')
+            : info.excerpt;
+      }
+
+      setTagInfo(info);
+    }
+  }, [tagResp, followResp]);
+  let pageTitle = '';
+  if (tagInfo?.display_name) {
+    pageTitle = `'${tagInfo.display_name}' ${t('questions', {
+      keyPrefix: 'page_title',
+    })}`;
+  }
+  const keywords: string[] = [];
+  if (tagInfo?.slug_name) {
+    keywords.push(tagInfo.slug_name);
+  }
+  synonymsRes?.synonyms.forEach((o) => {
+    keywords.push(o.slug_name);
+  });
+  usePageTags({
+    title: pageTitle,
+    description: tagInfo?.description,
+    keywords: keywords.join(','),
+  });
   return (
     <Row className="pt-4 mb-5">
       <Col className="page-main flex-auto">
+        {isLoading ? (
+          <div className="tag-box mb-5 placeholder-glow">
+            <div className="mb-3 h3 placeholder" style={{ width: '120px' }} />
+            <p
+              className="placeholder w-100 d-block align-top"
+              style={{ height: '24px' }}
+            />
+
+            <div
+              className="placeholder d-block align-top"
+              style={{ height: '38px', width: '100px' }}
+            />
+          </div>
+        ) : (
+          <div className="tag-box mb-5">
+            <h3 className="mb-3">
+              <Link
+                to={pathFactory.tagLanding(tagInfo.slug_name)}
+                replace
+                className="link-dark">
+                {tagInfo.display_name}
+              </Link>
+            </h3>
+
+            <p className="text-break">
+              {escapeRemove(tagInfo.excerpt) || t('no_desc')}
+              <Link to={pathFactory.tagInfo(curTagName)} className="ms-1">
+                [{t('more')}]
+              </Link>
+            </p>
+
+            <div className="box-ft">
+              {tagInfo.is_follower ? (
+                <div>
+                  <Button variant="primary" onClick={() => toggleFollow()}>
+                    {t('button_following')}
+                  </Button>
+                  <Link
+                    className="btn btn-outline-secondary ms-2"
+                    to="/users/settings/notify">
+                    <Icon name="bell-fill" />
+                  </Link>
+                </div>
+              ) : (
+                <Button
+                  variant="outline-primary"
+                  onClick={() => toggleFollow()}>
+                  {t('button_follow')}
+                </Button>
+              )}
+            </div>
+          </div>
+        )}
         <QuestionList
-          source="questions"
+          source="tag"
           data={listData}
           order={curOrder}
           isLoading={listLoading}
@@ -81,37 +192,11 @@ const Questions: FC = () => {
       </Col>
       <Col className="page-right-side mt-4 mt-xl-0">
         <CustomSidebar />
-        {!loggedUser.username && (
-          <div className="card mb-4">
-            <div className="card-body">
-              <h5 className="card-title">
-                {t2('website_welcome', {
-                  site_name: siteInfo.name,
-                })}
-              </h5>
-              <p className="card-text">{siteInfo.description}</p>
-              <Link
-                to={userCenter.getLoginUrl()}
-                className="btn btn-primary"
-                onClick={floppyNavigation.handleRouteLinkClick}>
-                {t('login', { keyPrefix: 'btns' })}
-              </Link>
-              {loginSetting.allow_new_registrations ? (
-                <Link
-                  to={userCenter.getSignUpUrl()}
-                  className="btn btn-link ms-2"
-                  onClick={floppyNavigation.handleRouteLinkClick}>
-                  {t('signup', { keyPrefix: 'btns' })}
-                </Link>
-              ) : null}
-            </div>
-          </div>
-        )}
-        {loggedUser.access_token && <FollowingTags />}
+        <FollowingTags />
         <HotQuestions />
       </Col>
     </Row>
   );
 };
 
-export default Questions;
+export default Index;
