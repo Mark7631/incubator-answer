@@ -20,7 +20,6 @@
 import { FC, useEffect, useState } from 'react';
 import { Row, Col, Button } from 'react-bootstrap';
 import {
-  useParams,
   Link,
   useNavigate,
   useSearchParams,
