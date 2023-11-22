@@ -45,7 +45,6 @@ import { QUESTIONS_ORDER_STORAGE_KEY } from '@/common/constants';
 const Index: FC = () => {
   const { t } = useTranslation('translation', { keyPrefix: 'question' });
   const navigate = useNavigate();
-  const routeParams = useParams();
   const curTagName = 'question';
   const [urlSearchParams] = useSearchParams();
   const storageOrder = Storage.get(QUESTIONS_ORDER_STORAGE_KEY);
@@ -59,7 +58,7 @@ const Index: FC = () => {
     page_size: 20,
     page: curPage,
     order: curOrder as Type.QuestionOrderBy,
-    tag: 'question',
+    tag: `'question'`,
   };
   const [tagInfo, setTagInfo] = useState<any>({});
   const [tagFollow, setTagFollow] = useState<Type.FollowParams>();
