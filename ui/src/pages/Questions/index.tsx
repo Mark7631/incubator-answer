@@ -19,11 +19,7 @@
 
 import { FC, useEffect, useState } from 'react';
 import { Row, Col, Button } from 'react-bootstrap';
-import {
-  Link,
-  useNavigate,
-  useSearchParams,
-} from 'react-router-dom';
+import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 import { usePageTags } from '@/hooks';
@@ -57,7 +53,7 @@ const Index: FC = () => {
     page_size: 20,
     page: curPage,
     order: curOrder as Type.QuestionOrderBy,
-    tag: `'question'`,
+    tag: curTagName,
   };
   const [tagInfo, setTagInfo] = useState<any>({});
   const [tagFollow, setTagFollow] = useState<Type.FollowParams>();
@@ -142,44 +138,7 @@ const Index: FC = () => {
             />
           </div>
         ) : (
-          <div className="tag-box mb-5">
-            <h3 className="mb-3">
-              <Link
-                to={pathFactory.tagLanding(tagInfo.slug_name)}
-                replace
-                className="link-dark">
-                {tagInfo.display_name}
-              </Link>
-            </h3>
-
-            <p className="text-break">
-              {escapeRemove(tagInfo.excerpt) || t('no_desc')}
-              <Link to={pathFactory.tagInfo(curTagName)} className="ms-1">
-                [{t('more')}]
-              </Link>
-            </p>
-
-            <div className="box-ft">
-              {tagInfo.is_follower ? (
-                <div>
-                  <Button variant="primary" onClick={() => toggleFollow()}>
-                    {t('button_following')}
-                  </Button>
-                  <Link
-                    className="btn btn-outline-secondary ms-2"
-                    to="/users/settings/notify">
-                    <Icon name="bell-fill" />
-                  </Link>
-                </div>
-              ) : (
-                <Button
-                  variant="outline-primary"
-                  onClick={() => toggleFollow()}>
-                  {t('button_follow')}
-                </Button>
-              )}
-            </div>
-          </div>
+          <div className="tag-box mb-5"></div>
         )}
         <QuestionList
           source="tag"
