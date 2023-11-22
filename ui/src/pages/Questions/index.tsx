@@ -59,7 +59,7 @@ const Index: FC = () => {
     page_size: 20,
     page: curPage,
     order: curOrder as Type.QuestionOrderBy,
-    tag: "question",
+    tag: 'question',
   };
   const [tagInfo, setTagInfo] = useState<any>({});
   const [tagFollow, setTagFollow] = useState<Type.FollowParams>();
