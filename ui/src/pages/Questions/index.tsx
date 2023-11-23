@@ -18,13 +18,13 @@
  */
 
 import { FC, useEffect, useState } from 'react';
-import { Row, Col, Button } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 import { usePageTags } from '@/hooks';
 import * as Type from '@/common/interface';
-import { FollowingTags, CustomSidebar, Icon } from '@/components';
+import { FollowingTags, CustomSidebar } from '@/components';
 import {
   useTagInfo,
   useFollow,
@@ -33,14 +33,14 @@ import {
 } from '@/services';
 import QuestionList, { QUESTION_ORDER_KEYS } from '@/components/QuestionList';
 import HotQuestions from '@/components/HotQuestions';
-import { escapeRemove, guard, Storage, scrollToDocTop } from '@/utils';
+import { Storage, scrollToDocTop } from '@/utils';
 import { pathFactory } from '@/router/pathFactory';
 import { QUESTIONS_ORDER_STORAGE_KEY } from '@/common/constants';
 
 const Index: FC = () => {
   const { t } = useTranslation('translation', { keyPrefix: 'question' });
   const navigate = useNavigate();
-  const curTagName = 'question';
+  const curTagName = 'questions';
   const [urlSearchParams] = useSearchParams();
   const storageOrder = Storage.get(QUESTIONS_ORDER_STORAGE_KEY);
   const curOrder =
@@ -56,7 +56,7 @@ const Index: FC = () => {
     tag: curTagName,
   };
   const [tagInfo, setTagInfo] = useState<any>({});
-  const [tagFollow, setTagFollow] = useState<Type.FollowParams>();
+  const [tagFollow] = useState<Type.FollowParams>();
   const { data: tagResp, isLoading } = useTagInfo({ name: curTagName });
   const { data: listData, isLoading: listLoading } = useQuestionList(reqParams);
   const { data: followResp } = useFollow(tagFollow);
@@ -64,15 +64,6 @@ const Index: FC = () => {
     tagInfo?.tag_id,
     tagInfo?.status,
   );
-  const toggleFollow = () => {
-    if (!guard.tryNormalLogged(true)) {
-      return;
-    }
-    setTagFollow({
-      is_cancel: tagInfo.is_follower,
-      object_id: tagInfo.tag_id,
-    });
-  };
 
   useEffect(() => {
     if (!listLoading) {
@@ -138,7 +129,16 @@ const Index: FC = () => {
             />
           </div>
         ) : (
-          <div className="tag-box mb-5"></div>
+          <div className="tag-box mb-5">
+            <h3 className="mb-3">
+              <Link
+                to={pathFactory.tagLanding(tagInfo.slug_name)}
+                replace
+                className="link-dark">
+                {tagInfo.display_name}
+              </Link>
+            </h3>
+          </div>
         )}
         <QuestionList
           source="tag"

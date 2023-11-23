@@ -47,6 +47,19 @@ const questionLanding = (questionId: string, slugTitle: string = '') => {
   return `/questions/${questionId}`;
 };
 
+const articleLanding = (questionId: string, slugTitle: string = '') => {
+  const { seo } = seoSettingStore.getState();
+  if (!questionId) {
+    return slugTitle ? `/articles/null/${slugTitle}` : '/articles/null';
+  }
+  // @ts-ignore
+  if (/[13]/.test(seo.permalink) && slugTitle) {
+    return `/articles/${questionId}/${slugTitle}`;
+  }
+
+  return `/articles/${questionId}`;
+};
+
 const answerLanding = (params: {
   questionId: string;
   slugTitle?: string;
@@ -64,5 +77,6 @@ export const pathFactory = {
   tagInfo,
   tagEdit,
   questionLanding,
+  articleLanding,
   answerLanding,
 };
