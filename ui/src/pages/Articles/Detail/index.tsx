@@ -74,9 +74,7 @@ const Index = () => {
   });
   const { setUsers } = usePageUsers();
   const userInfo = loggedUserInfoStore((state) => state.user);
-  const isAuthor = userInfo?.username === question?.user_info?.username;
   const isAdmin = userInfo?.role_id === 2;
-  const isModerator = userInfo?.role_id === 3;
   const isLogged = Boolean(userInfo?.access_token);
   const loggedUserRank = userInfo?.rank;
   const { state: locationState } = useLocation();
@@ -253,7 +251,6 @@ const Index = () => {
                   key={item?.id}
                   data={item}
                   questionTitle={question?.title || ''}
-                  canAccept={isAuthor || isAdmin || isModerator}
                   callback={initPage}
                   isLogged={isLogged}
                 />

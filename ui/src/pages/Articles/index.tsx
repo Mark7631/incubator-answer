@@ -31,7 +31,7 @@ import {
   useQuerySynonymsTags,
   useQuestionList,
 } from '@/services';
-import QuestionList, { QUESTION_ORDER_KEYS } from '@/components/QuestionList';
+import ArticleList, { QUESTION_ORDER_KEYS } from '@/components/ArticleList';
 import HotQuestions from '@/components/HotQuestions';
 import { Storage, scrollToDocTop } from '@/utils';
 import { pathFactory } from '@/router/pathFactory';
@@ -140,7 +140,7 @@ const Index: FC = () => {
             </h3>
           </div>
         )}
-        <QuestionList
+        <ArticleList
           source="tag"
           data={listData}
           order={curOrder}

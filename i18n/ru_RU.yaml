@@ -410,70 +410,70 @@ backend:
       title:
         other: "[{{.SiteName}}] Подтвердите новый адрес электронной почты"
       body:
-        other: "Confirm your new email address for {{.SiteName}} by clicking on the following link:<br>\n<a href='{{.ChangeEmailUrl}}' target='_blank'>{{.ChangeEmailUrl}}</a><br><br>\n\nIf you did not request this change, please ignore this email.\n"
+        other: "Подтвердите новый email для {{.SiteName}}, кликните на эту ссылку:<br>\n<a href='{{.ChangeEmailUrl}}' target='_blank'>{{.ChangeEmailUrl}}</a><br><br>\n\nЕсли вы не запрашивали изменения, игнорируйте это сообщение.\n"
     new_answer:
       title:
         other: "[{{.SiteName}}] {{.DisplayName}} answered your question"
       body:
-        other: "<a href='{{.AnswerUrl}}'>{{.QuestionTitle}}</a><br><br>\n\n{{.DisplayName}}:<br>\n<blockquote>{{.AnswerSummary}}</blockquote><br>\n<a href='{{.AnswerUrl}}'>View it on {{.SiteName}}</a><br><br>\n\n--<br>\n<small><a href='{{.UnsubscribeUrl}}'>Unsubscribe</a></small>"
+        other: "<a href='{{.AnswerUrl}}'>{{.QuestionTitle}}</a><br><br>\n\n{{.DisplayName}}:<br>\n<blockquote>{{.AnswerSummary}}</blockquote><br>\n<a href='{{.AnswerUrl}}'>Посмотрите это на {{.SiteName}}</a><br><br>\n\n--<br>\n<small><a href='{{.UnsubscribeUrl}}'>Отписаться</a></small>"
     invited_you_to_answer:
       title:
-        other: "[{{.SiteName}}] {{.DisplayName}} invited you to answer"
+        other: "[{{.SiteName}}] {{.DisplayName}} приглашает для ответа"
       body:
-        other: "<a href='{{.InviteUrl}}'>{{.QuestionTitle}}</a><br><br>\n\n{{.DisplayName}}:<br>\n<blockquote>I think you may know the answer.</blockquote><br>\n<a href='{{.InviteUrl}}'>View it on {{.SiteName}}</a><br><br>\n\n--<br>\n<small><a href='{{.UnsubscribeUrl}}'>Unsubscribe</a></small>"
+        other: "<a href='{{.InviteUrl}}'>{{.QuestionTitle}}</a><br><br>\n\n{{.DisplayName}}:<br>\n<blockquote>Я думаю ты можешь знать ответ.</blockquote><br>\n<a href='{{.InviteUrl}}'>Посмотрите на {{.SiteName}}</a><br><br>\n\n--<br>\n<small><a href='{{.UnsubscribeUrl}}'>Отписаться</a></small>"
     new_comment:
       title:
-        other: "[{{.SiteName}}] {{.DisplayName}} commented on your post"
+        other: "[{{.SiteName}}] {{.DisplayName}} прокомментировал ваш пост"
       body:
-        other: "<a href='{{.CommentUrl}}'>{{.QuestionTitle}}</a><br><br>\n\n{{.DisplayName}}:<br>\n<blockquote>{{.CommentSummary}}</blockquote><br>\n<a href='{{.CommentUrl}}'>View it on {{.SiteName}}</a><br><br>\n\n--<br>\n<small><a href='{{.UnsubscribeUrl}}'>Unsubscribe</a></small>"
+        other: "<a href='{{.CommentUrl}}'>{{.QuestionTitle}}</a><br><br>\n\n{{.DisplayName}}:<br>\n<blockquote>{{.CommentSummary}}</blockquote><br>\n<a href='{{.CommentUrl}}'>Посмотрите на {{.SiteName}}</a><br><br>\n\n--<br>\n<small><a href='{{.UnsubscribeUrl}}'>Отписаться</a></small>"
     new_question:
       title:
-        other: "[{{.SiteName}}] New question: {{.QuestionTitle}}"
+        other: "[{{.SiteName}}] Новый вопрос: {{.QuestionTitle}}"
       body:
-        other: "<a href='{{.QuestionUrl}}'>{{.QuestionTitle}}</a><br>\n<small>{{.Tags}}</small><br><br>\n\n--<br>\n<small><a href='{{.UnsubscribeUrl}}'>Unsubscribe</a></small>"
+        other: "<a href='{{.QuestionUrl}}'>{{.QuestionTitle}}</a><br>\n<small>{{.Tags}}</small><br><br>\n\n--<br>\n<small><a href='{{.UnsubscribeUrl}}'>Отписаться</a></small>"
     pass_reset:
       title:
-        other: "[{{.SiteName }}] Password reset"
+        other: "[{{.SiteName }}] Пароль сброшен"
       body:
-        other: "Somebody asked to reset your password on {{.SiteName}}.<br><br>\n\nIf it was not you, you can safely ignore this email.<br><br>\n\nClick the following link to choose a new password:<br>\n<a href='{{.PassResetUrl}}' target='_blank'>{{.PassResetUrl}}</a>\n"
+        other: "Кто-то попросил сбросить ваш пароль на {{.SiteName}}.<br><br>\n\nЕсли это были не вы, то игнорируйте это сообщение.<br><br>\n\nПерейдите по следующей ссылке, чтобы поставить новый пароль:<br>\n<a href='{{.PassResetUrl}}' target='_blank'>{{.PassResetUrl}}</a>\n"
     register:
       title:
         other: "[{{.SiteName}}] Confirm your new account"
       body:
-        other: "Welcome to {{.SiteName}}!<br><br>\n\nClick the following link to confirm and activate your new account:<br>\n<a href='{{.RegisterUrl}}' target='_blank'>{{.RegisterUrl}}</a><br><br>\n\nIf the above link is not clickable, try copying and pasting it into the address bar of your web browser.\n"
+        other: "Добро пожаловать на {{.SiteName}}!<br><br>\n\nПерейдите, чтобы активировать новый аккаунт:<br>\n<a href='{{.RegisterUrl}}' target='_blank'>{{.RegisterUrl}}</a><br><br>\n\nЕсли невозможно перейти по ссылке, то попытайтесь скопировать её и вставить в строку браузера.\n"
     test:
       title:
-        other: "[{{.SiteName}}] Test Email"
+        other: "[{{.SiteName}}] Тестовый email"
       body:
         other: "Это тестовое письмо."
   action_activity_type:
     upvote:
-      other: upvote
+      other: проголосовать за
     upvoted:
-      other: upvoted
+      other: проголосовано за
     downvote:
-      other: downvote
+      other: проголосовать против
     downvoted:
-      other: downvoted
+      other: проголосовано против
     accept:
-      other: accept
+      other: подтвердить
     accepted:
-      other: accepted
+      other: подтверждено
 #The following fields are used for interface presentation(Front-end)
 ui:
   how_to_format:
-    title: How to Format
+    title: Как отформатировать
     desc: >-
       <ul class="mb-0"><li><p class="mb-2">to make links</p><pre class="mb-2"><code>&lt;https://url.com&gt;<br/><br/>[Title](https://url.com)</code></pre></li><li><p class="mb-2">put returns between paragraphs</p></li><li><p class="mb-2"><em>_italic_</em> or **<strong>bold</strong>**</p></li><li><p class="mb-2">indent code by 4 spaces</p></li><li><p class="mb-2">quote by placing <code>&gt;</code> at start of line</p></li><li><p class="mb-2">backtick escapes <code>`like _this_`</code></p></li><li><p class="mb-2">create code fences with backticks <code>`</code></p><pre class="mb-0"><code>```<br/>code here<br/>```</code></pre></li></ul>
   pagination:
-    prev: Prev
+    prev: Предыдущий
     next: Следующий
   page_title:
     question: Вопрос
     questions: Вопросы
     tag: Тэг
     tags: Теги
-    tag_wiki: wiki тэг
+    tag_wiki: вики тэг
     create_tag: Создать тег
     edit_tag: Изменить тег
     ask_a_question: Добавить вопрос
@@ -495,7 +495,7 @@ ui:
     upgrade: Обновить ответ
     maintenance: Обслуживание сайта
     users: Пользователи
-    oauth_callback: Processing
+    oauth_callback: В процессе
     http_404: HTTP Error 404
     http_50X: HTTP Error 500
     http_403: HTTP Error 403
@@ -503,21 +503,21 @@ ui:
     title: Уведомления
     inbox: Входящие
     achievement: Достижения
-    new_alerts: New alerts
+    new_alerts: Новое оповещение
     all_read: Отметить всё как прочитанное
     show_more: Показать еще
-    someone: Someone
+    someone: Кто-то
     inbox_type:
-      all: All
-      posts: Posts
-      invites: Invites
-      votes: Votes
+      all: Все
+      posts: Посты
+      invites: Приглашение
+      votes: Голоса
   suspended:
     title: Ваш аккаунт заблокирован
     until_time: "Ваша учетная запись была заблокирована до {{ time }}."
     forever: Этот пользователь был навсегда заблокирован.
     end: Вы не соответствуете правилам сообщества.
-    contact_us: Contact us
+    contact_us: Свяжитесь с нами
   editor:
     blockquote:
       text: Цитата
@@ -543,41 +543,41 @@ ui:
             msg:
               empty: Код не может быть пустым.
           language:
-            label: Language
-            placeholder: Automatic detection
-      btn_cancel: Cancel
-      btn_confirm: Add
+            label: Язык
+            placeholder: Автоматическое обнаружение
+      btn_cancel: Отменить
+      btn_confirm: Добавить
     formula:
-      text: Formula
+      text: Формула
       options:
-        inline: Inline formula
-        block: Block formula
+        inline: Inline формула
+        block: Block формула
     heading:
-      text: Heading
+      text: Загаловок
       options:
-        h1: Heading 1
-        h2: Heading 2
-        h3: Heading 3
-        h4: Heading 4
-        h5: Heading 5
-        h6: Heading 6
+        h1: Загаловок 1
+        h2: Загаловок 2
+        h3: Загаловок 3
+        h4: Загаловок 4
+        h5: Загаловок 5
+        h6: Загаловок 6
     help:
-      text: Help
+      text: Помощь
     hr:
-      text: Horizontal rule
+      text: Горизантальное правило
     image:
-      text: Image
+      text: Картинка
       add_image: Добавить изображение
       tab_image: Загрузить изображение
       form_image:
         fields:
           file:
-            label: Image file
+            label: Файл-картинка
             btn: Выбрать изображение
             msg:
-              empty: File cannot be empty.
-              only_image: Only image files are allowed.
-              max_size: File size cannot exceed 4MB.
+              empty: Файл не может быть пустым.
+              only_image: Только картинки позволены.
+              max_size: Файл не может превышать 4MB.
           desc:
             label: Описание
       tab_url: URL изображения
@@ -589,18 +589,18 @@ ui:
               empty: URL изображения не может быть пустым.
           name:
             label: Описание
-      btn_cancel: Cancel
-      btn_confirm: Add
-      uploading: Uploading
+      btn_cancel: Отмена
+      btn_confirm: Добавить
+      uploading: Загрузка
     indent:
-      text: Indent
+      text: Отступ
     outdent:
-      text: Outdent
+      text: Выступ
     italic:
-      text: Emphasis
+      text: Акцент
     link:
-      text: Hyperlink
-      add_link: Add hyperlink
+      text: Гиперссылка
+      add_link: Добавить гиперссылку
       form:
         fields:
           url:
@@ -609,20 +609,20 @@ ui:
               empty: URL не может быть пустым.
           name:
             label: Описание
-      btn_cancel: Cancel
-      btn_confirm: Add
+      btn_cancel: Отменить
+      btn_confirm: Добавить
     ordered_list:
-      text: Numbered list
+      text: Нумерованный лист
     unordered_list:
-      text: Bulleted list
+      text: Ненумерованный лист
     table:
-      text: Table
-      heading: Heading
-      cell: Cell
+      text: Таблица
+      heading: Заголовок
+      cell: Вызвать
   close_modal:
-    title: I am closing this post as...
-    btn_cancel: Cancel
-    btn_submit: Submit
+    title: Я закрываю этот пост, поскольку...
+    btn_cancel: Отменить
+    btn_submit: Отправить
     remark:
       empty: Не может быть пустым.
     msg:
@@ -644,7 +644,7 @@ ui:
     form:
       fields:
         display_name:
-          label: Display name
+          label: Отображаемое имя
           msg:
             empty: Отображаемое название не может быть пустым.
             range: Отображаемое имя до 35 символов.
@@ -656,10 +656,10 @@ ui:
             range: URL slug до 35 символов.
             character: URL slug содержит недопустимый набор символов.
         desc:
-          label: Description
+          label: Описание
     btn_cancel: Отмена
     btn_submit: Отправить
-    btn_post: Post new tag
+    btn_post: Создать новый тэг
   tag_info:
     created_at: Создано
     edited_at: Отредактировано
@@ -675,10 +675,10 @@ ui:
     delete:
       title: Удалить этот тег
       tip_with_posts: >-
-        <p>We do not allowed <strong>deleting tag with posts</strong>.</p> <p>Please remove this tag from the posts first.</p>
+        <p>Мы не позволяем <strong> удаление тэга, к которым привязаны посты </strong>.</p> <p>Пожалуйста удалите этот тэг с постов.</p>
       tip_with_synonyms: >-
-        <p>We do not allowed <strong>deleting tag with synonyms</strong>.</p> <p>Please remove the synonyms from this tag first.</p>
-      tip: Are you sure you wish to delete?
+        <p>Мы не позволяем <strong>удаление тэга с синонимами</strong>.</p> <p>Пожалуста удалите синонимы тэга.</p>
+      tip: Вы уверены, что хотите удалить?
       close: Закрыть
   edit_tag:
     title: Изменить тег
@@ -688,14 +688,14 @@ ui:
         revision:
           label: Редакция
         display_name:
-          label: Display name
+          label: Отображаемое имя
         slug_name:
           label: URL slug
           info: 'Необходимо использовать набор символов "a-z", "0-9", "+ # - ."'
         desc:
           label: Описание
         edit_summary:
-          label: Edit summary
+          label: Редактировать резюме
           placeholder: >-
             Кратко опишите ваши изменения (исправленная орфография, исправленная грамматика, улучшенное форматирование)
     btn_save_edits: Сохранить изменения
@@ -704,133 +704,133 @@ ui:
     long_date: MMM D
     long_date_with_year: "MMM D, YYYY"
     long_date_with_time: "MMM D, YYYY [at] HH:mm"
-    now: now
-    x_seconds_ago: "{{count}}s ago"
-    x_minutes_ago: "{{count}}m ago"
-    x_hours_ago: "{{count}}h ago"
-    hour: hour
-    day: day
+    now: сейчас
+    x_seconds_ago: "{{count}}с назад"
+    x_minutes_ago: "{{count}}м назад"
+    x_hours_ago: "{{count}}ч назад"
+    hour: час
+    day: день
   comment:
     btn_add_comment: Добавить комментарий
-    reply_to: Reply to
-    btn_reply: Reply
-    btn_edit: Edit
+    reply_to: Ответить
+    btn_reply: Ответить
+    btn_edit: Редактировать
     btn_delete: Удалить
-    btn_flag: Flag
-    btn_save_edits: Save edits
-    btn_cancel: Cancel
+    btn_flag: Флаг
+    btn_save_edits: Сохранить изменения
+    btn_cancel: Отменить
     show_more: Показать больше комментариев
     tip_question: >-
-      Use comments to ask for more information or suggest improvements. Avoid answering questions in comments.
+      Используйте комментарии, чтобы запросить дополнительную информацию или предложить улучшения. Избегайте отвечать на вопросы в комментариях.
     tip_answer: >-
       Используйте комментарии для ответа другим пользователям или уведомления об изменениях. Если вы добавляете новую информацию, редактируйте ваше сообщение вместо комментариев.
-    tip_vote: It adds something useful to the post
+    tip_vote: Это добавляет кое-что полезное к сообщению
   edit_answer:
     title: Редактировать ответ
     default_reason: Редактировать ответ
     form:
       fields:
         revision:
-          label: Revision
+          label: Пересмотр
         answer:
           label: Ответ
           feedback:
-            characters: content must be at least 6 characters in length.
+            characters: Контент должен превышать 6 символов.
         edit_summary:
-          label: Edit summary
+          label: Редактировать резюме
           placeholder: >-
-            Briefly explain your changes (corrected spelling, fixed grammar, improved formatting)
-    btn_save_edits: Save edits
-    btn_cancel: Cancel
+            Кратко объясните ваши изменения (исправлена орфография, исправлена грамматика, улучшено форматирование)
+    btn_save_edits: Сохраните изменения
+    btn_cancel: Отменить
   tags:
-    title: Tags
+    title: Тэги
     sort_buttons:
-      popular: Popular
-      name: Name
-      newest: Newest
-    button_follow: Follow
-    button_following: Following
-    tag_label: questions
+      popular: Популярные
+      name: Имя
+      newest: Новые
+    button_follow: Подписаться
+    button_following: Подписан
+    tag_label: вопросы
     search_placeholder: Фильтр по названию тега
-    no_desc: The tag has no description.
-    more: More
+    no_desc: Тэг не имеет описания.
+    more: Больше
   ask:
     title: Добавить вопрос
     edit_title: Редактировать вопрос
     default_reason: Редактировать вопрос
-    similar_questions: Similar questions
+    similar_questions: Похожие вопросы
     form:
       fields:
         revision:
-          label: Revision
+          label: Пересмотр
         title:
           label: Заголовок
-          placeholder: Be specific and imagine you're asking a question to another person
+          placeholder: Будьте конкретны и представьте, что вы задаете вопрос другому человеку
           msg:
             empty: Заголовок не может быть пустым.
             range: Заголовок должен быть меньше 150 символов
         body:
-          label: Body
+          label: Основа
           msg:
-            empty: Body cannot be empty.
+            empty: Основа не может быть пустой.
         tags:
-          label: Tags
+          label: Тэги
           msg:
-            empty: Tags cannot be empty.
+            empty: Тэги не могут быть пустыми.
         answer:
-          label: Answer
+          label: Ответ
           msg:
-            empty: Answer cannot be empty.
+            empty: Ответ не может быть пустым.
         edit_summary:
-          label: Edit summary
+          label: Редактировать резюме
           placeholder: >-
-            Briefly explain your changes (corrected spelling, fixed grammar, improved formatting)
-    btn_post_question: Post your question
-    btn_save_edits: Save edits
-    answer_question: Answer your own question
+            Кратко объясните ваши изменения (исправлена орфография, исправлена грамматика, улучшено форматирование)
+    btn_post_question: Выложить ваш вопрос
+    btn_save_edits: Сохранить изменения
+    answer_question: Ответить на свой вопрос
     post_question&answer: Опубликуйте свой вопрос и ответ
   articles:
     title: Добавить вопрос
     edit_title: Редактировать вопрос
     default_reason: Редактировать вопрос
-    similar_questions: Similar questions
+    similar_questions: Похожие вопросы
     form:
       fields:
         revision:
-          label: Revision
+          label: Пересмотр
         title:
           label: Заголовок
-          placeholder: Be specific and imagine you're asking a question to another person
+          placeholder: Будьте конкретны и представьте, что вы задаете вопрос другому человеку
           msg:
             empty: Заголовок не может быть пустым.
             range: Заголовок должен быть меньше 150 символов
         body:
-          label: Body
+          label: Основа
           msg:
-            empty: Body cannot be empty.
+            empty: Основа не может быть пустой.
         tags:
-          label: Tags
+          label: Тэги
           msg:
-            empty: Tags cannot be empty.
+            empty: Тэг не может быть пустым.
         answer:
-          label: Answer
+          label: Ответ
           msg:
-            empty: Answer cannot be empty.
+            empty: Ответ не может быть пустым.
         edit_summary:
-          label: Edit summary
+          label: Редактирование резюме
           placeholder: >-
-            Briefly explain your changes (corrected spelling, fixed grammar, improved formatting)
-    btn_post_question: Post your question
-    btn_save_edits: Save edits
-    answer_question: Answer your own question
+            Кратко объясните ваши изменения (исправлена орфография, исправлена грамматика, улучшено форматирование)
+    btn_post_question: Опубликуйте свой вопрос
+    btn_save_edits: Сохранить изменения
+    answer_question: Отетить на свой вопрос
     post_question&answer: Опубликуйте свой вопрос и ответ
   tag_selector:
-    add_btn: Add tag
+    add_btn: Добавить тэг
     create_btn: Создать новый тег
     search_tag: Поиск тега
-    hint: "Describe what your question is about, at least one tag is required."
-    no_result: No tags matched
-    tag_required_text: Required tag (at least one)
+    hint: "Опишите, о чем ваш вопрос, требуется хотя бы один тег".
+    no_result: Тэги не отмечены
+    tag_required_text: Обязательный тег (хотя бы один)
   header:
     nav:
       question: Вопросы
@@ -839,8 +839,8 @@ ui:
       profile: Профиль
       setting: Настройки
       logout: Выйти
-      admin: Admin
-      review: Review
+      admin: Админ
+      review: Пересмотр
       bookmark: Закладки
       moderation: Модерация
       articles: Статьи
@@ -850,26 +850,26 @@ ui:
     build_on: >-
       Built on <1> Answer </1>- the open-source software that powers Q&A communities.<br />Made with love © {{cc}}.
   upload_img:
-    name: Change
+    name: Изменить
     loading: загрузка...
   pic_auth_code:
     title: Captcha
-    placeholder: Type the text above
+    placeholder: Введите текст выше
     msg:
-      empty: Captcha cannot be empty.
+      empty: Captcha не может быть пустой.
   inactive:
     first: >-
-      You're almost done! We sent an activation mail to <bold>{{mail}}</bold>. Please follow the instructions in the mail to activate your account.
-    info: "If it doesn't arrive, check your spam folder."
+      Вы почти закончили! Мы отправили письмо с активацией по адресу <bold>{{mail}}</bold>. Пожалуйста, следуйте инструкциям в письме, чтобы активировать свою учетную запись.
+    info: "Если оно не пришло, проверьте свою папку со спамом".
     another: >-
-      We sent another activation email to you at <bold>{{mail}}</bold>. It might take a few minutes for it to arrive; be sure to check your spam folder.
+      Мы отправили другое письмо активации на <bold>{{mail}}</bold>. Это может занять несколько минут, прежде чем оно придет; обязательно проверьте свою папку со спамом.
     btn_name: Повторно отправить письмо с активацией
     change_btn_name: Изменить email
     msg:
       empty: Не может быть пустым.
     resend_email:
       url_label: Вы уверены, что хотите повторно отправить письмо с активацией?
-      url_text: You can also give the activation link above to the user.
+      url_text: Вы также можете предоставить пользователю ссылку для активации, указанную выше.
   login:
     login_to_continue: Войдите, чтобы продолжить
     info_sign: У вас нет аккаунта? <1>Зарегистрируйтесь</1>
@@ -890,114 +890,114 @@ ui:
       label: Пароль
       msg:
         empty: Пароль не может быть пустым.
-        different: The passwords entered on both sides are inconsistent
+        different: Пароли не совпадают
   account_forgot:
-    page_title: Forgot Your Password
-    btn_name: Send me recovery email
+    page_title: Забыли свой пароль
+    btn_name: Отправить востановительное письмо
     send_success: >-
-      If an account matches <strong>{{mail}}</strong>, you should receive an email with instructions on how to reset your password shortly.
+      Если учетная запись совпадает <strong>{{mail}}</strong>, в ближайшее время вы должны получить электронное письмо с инструкциями о том, как сбросить свой пароль.
     email:
       label: Адрес эл. почты
       msg:
         empty: Адрес электронной почты не может быть пустым.
   change_email:
-    btn_cancel: Cancel
-    btn_update: Update email address
+    btn_cancel: Отменить
+    btn_update: Обновить адрес электронной почты
     send_success: >-
-      If an account matches <strong>{{mail}}</strong>, you should receive an email with instructions on how to reset your password shortly.
+      Если учетная запись совпадает <strong>{{mail}}</strong>, в ближайшее время вы должны получить электронное письмо с инструкциями о том, как сбросить свой пароль.
     email:
-      label: New email
+      label: Новый email
       msg:
-        empty: Email cannot be empty.
+        empty: Email не может быть пустым.
   oauth:
-    connect: Connect with {{ auth_name }}
-    remove: Remove {{ auth_name }}
+    connect: Свяжитесь с {{ auth_name }}
+    remove: Удалить {{ auth_name }}
   oauth_bind_email:
-    subtitle: Add a recovery email to your account.
-    btn_update: Update email address
+    subtitle: Добавьте электронное письмо для восстановления своей учётной записи.
+    btn_update: Обновить адрес электронной почты
     email:
       label: Email
       msg:
-        empty: Email cannot be empty.
-    modal_title: Email already existes.
-    modal_content: This email address already registered. Are you sure you want to connect to the existing account?
-    modal_cancel: Change email
-    modal_confirm: Connect to the existing account
+        empty: Email не может быть пустым.
+    modal_title: Email уже существует.
+    modal_content: Этот email уже зарегистрирован. Вы уверены, что хотите подключиться к существующей учетной записи?
+    modal_cancel: Изменить email
+    modal_confirm: Подключитесь к существующей учетной записи
   password_reset:
-    page_title: Password Reset
-    btn_name: Reset my password
+    page_title: Пароль сброшен
+    btn_name: Сбросить мой пароль
     reset_success: >-
-      You successfully changed your password; you will be redirected to the log in page.
+      Вы успешно сменили свой пароль; вы будете перенаправлены на страницу входа в систему.
     link_invalid: >-
-      Sorry, this password reset link is no longer valid. Perhaps your password is already reset?
-    to_login: Continue to log in page
+      Извините, эта ссылка для сброса пароля больше недействительна. Возможно, ваш пароль уже сброшен?
+    to_login: Перейдите на страницу входа в систему
     password:
-      label: Password
+      label: Пароль
       msg:
-        empty: Password cannot be empty.
-        length: The length needs to be between 8 and 32
-        different: The passwords entered on both sides are inconsistent
+        empty: Пароль не может быть пустым.
+        length: Длина должна быть от 8 до 32
+        different: Пароли, введенные с обеих сторон, несовместимы
     password_confirm:
-      label: Confirm new password
+      label: Подтвердите новый пароль
   settings:
-    page_title: Settings
-    goto_modify: Go to modify
+    page_title: Настройки
+    goto_modify: Перейдите к изменению
     nav:
-      profile: Profile
-      notification: Notifications
-      account: Account
-      interface: Interface
+      profile: Профиль
+      notification: Уведомления
+      account: Аккаунт
+      interface: Интерфейс
     profile:
       heading: Профиль
-      btn_name: Save
+      btn_name: Сохранить
       display_name:
-        label: Display name
-        msg: Display name cannot be empty.
-        msg_range: Display name up to 30 characters.
+        label: Отображаемое имя
+        msg: Отображаемое имя не может быть пустым.
+        msg_range: Отображаемое имя длиной до 30 символов.
       username:
-        label: Username
-        caption: People can mention you as "@username".
-        msg: Username cannot be empty.
-        msg_range: Username up to 30 characters.
-        character: 'Must use the character set "a-z", "0-9", " - . _"'
+        label: Имя
+        caption: Люди могут упоминать вас как "@username".
+        msg: Имя не может быть пустым.
+        msg_range: Имя длиной до 30 символов.
+        character: 'Использовать только "a-z", "0-9", " - . _"'
       avatar:
-        label: Profile image
+        label: Картинка  профиля
         gravatar: Gravatar
-        gravatar_text: You can change image on
-        custom: Custom
-        custom_text: You can upload your image.
-        default: System
-        msg: Please upload an avatar
+        gravatar_text: Ты можешь изменить картинку
+        custom: Настраиваемый
+        custom_text: Вы можете загрузить свою картинку.
+        default: Системная
+        msg: Пожалуйста загрузите аватар
       bio:
-        label: About me
+        label: Обо мне
       website:
-        label: Website
+        label: Сайт
         placeholder: "https://example.com"
-        msg: Website incorrect format
+        msg: Некоректный формат сайта
       location:
-        label: Location
-        placeholder: "City, Country"
+        label: Локация
+        placeholder: "Город, Страна"
     notification:
-      heading: Notifications
+      heading: Уведомление
       email: Email
       inbox:
-        label: Email notifications
-        description: Answers to your questions, comments, invites, and more.
+        label: Email Уведомление
+        description: Ответы на ваши вопросы, комментарии, приглашения и многое другое.
       all_new_question:
-        label: All new questions
-        description: Get notified of all new questions. Up to 50 questions per week.
+        label: Все новые вопросы
+        description: Получайте уведомления обо всех новых вопросах. До 50 вопросов в неделю.
       all_new_question_for_following_tags:
-        label: All new questions for following tags
-        description: Get notified of new questions for following tags.
+        label: Все новые вопросы по подписке на тэги
+        description: Получайте уведомления о новых вопросах по следующим тегам.
     account:
-      heading: Account
-      change_email_btn: Change email
-      change_pass_btn: Change password
+      heading: Аккаунт
+      change_email_btn: Смените email
+      change_pass_btn: Смените пароль
       change_email_info: >-
-        We've sent an email to that address. Please follow the confirmation instructions.
+        Мы отправили электронное письмо на этот адрес. Пожалуйста, следуйте инструкциям по подтверждению.
       email:
-        label: New email
-        msg: New email cannot be empty.
+        label: Новый email
+        msg: Новый email не может быть пустым.
       pass:
         label: Current password
         msg: Password cannot be empty.

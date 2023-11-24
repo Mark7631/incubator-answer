@@ -99,7 +99,7 @@ const Index: FC<Props> = ({ data, initPage, hasAnswer, isLogged }) => {
         <Link
           className="link-dark"
           reloadDocument
-          to={pathFactory.questionLanding(data.id, data.url_title)}>
+          to={pathFactory.articleLanding(data.id, data.url_title)}>
           {data.title}
           {data.status === 2
             ? ` [${t('closed', { keyPrefix: 'question' })}]`

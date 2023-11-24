@@ -51,12 +51,7 @@ interface Props {
   isLoading: boolean;
 }
 
-const QuestionList: FC<Props> = ({
-  source,
-  order,
-  data,
-  isLoading = false,
-}) => {
+const ArticleList: FC<Props> = ({ source, order, data, isLoading = false }) => {
   const { t } = useTranslation('translation', { keyPrefix: 'question' });
   const [urlSearchParams] = useSearchParams();
   const curOrder =
@@ -153,4 +148,4 @@ const QuestionList: FC<Props> = ({
     </div>
   );
 };
-export default QuestionList;
+export default ArticleList;
