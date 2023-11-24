@@ -999,85 +999,85 @@ ui:
         label: Новый email
         msg: Новый email не может быть пустым.
       pass:
-        label: Current password
-        msg: Password cannot be empty.
-      password_title: Password
+        label: Текущий пароль
+        msg: Пароль не может быть пустым
+      password_title: Пароль
       current_pass:
-        label: Current password
+        label: Текущий пароль
         msg:
-          empty: Current password cannot be empty.
-          length: The length needs to be between 8 and 32.
-          different: The two entered passwords do not match.
+          empty: Текущий пароль не может быть пустым.
+          length: Длина должна быть от 8 до 32.
+          different: Пароли не совпадают.
       new_pass:
-        label: New password
+        label: Новый пароль
       pass_confirm:
-        label: Confirm new password
+        label: Подтвердить новый пароль
     interface:
-      heading: Interface
+      heading: Интерфейс
       lang:
-        label: Interface language
-        text: User interface language. It will change when you refresh the page.
+        label: Язык интерфейса
+        text: Пользовательский язык интерфейса. Язык поменяется после перезагрузки страницы.
     my_logins:
-      title: My logins
-      label: Log in or sign up on this site using these accounts.
-      modal_title: Remove login
-      modal_content: Are you sure you want to remove this login from your account?
-      modal_confirm_btn: Remove
-      remove_success: Removed successfully
+      title: Мои логины
+      label: Войдите в систему или зарегистрируйтесь на этом сайте, используя эти учетные записи.
+      modal_title: Удалить логин
+      modal_content: Вы уверины, что хотите удалить этот логиин.
+      modal_confirm_btn: Удалить
+      remove_success: Удаление успешно
   toast:
-    update: update success
-    update_password: Password changed successfully.
-    flag_success: Thanks for flagging.
-    forbidden_operate_self: Forbidden to operate on yourself
-    review: Your revision will show after review.
-    sent_success: Sent successfully
+    update: обновление успешно
+    update_password: Пароль успешно сменён.
+    flag_success: Спасибо за флаг.
+    forbidden_operate_self: Запрещено оперировать себя
+    review: Ваша правка будет показана после проверки.
+    sent_success: Успешно отправлено
   related_question:
     title: Связанные вопросы
-    answers: answers
+    answers: ответы
   invite_to_answer:
-    title: People Asked
-    desc: Invite people who you think might know the answer.
-    invite: Invite to answer
-    add: Add people
-    search: Search people
+    title: Люди спрашивают
+    desc: Пригласите людей, которые, по вашему мнению, могут знать ответ.
+    invite: Пригласите для ответа
+    add: Добавить людей
+    search: Искать людей
   question_detail:
-    action: Action
-    Asked: Asked
-    asked: asked
-    update: Modified
-    edit: edited
-    Views: Viewed
-    Follow: Follow
-    Following: Following
-    follow_tip: Follow this question to receive notifications
-    answered: answered
-    closed_in: Closed in
-    show_exist: Show existing question.
-    useful: Useful
-    question_useful: It is useful and clear
-    question_un_useful: It is unclear or not useful
-    question_bookmark: Bookmark this question
-    answer_useful: It is useful
-    answer_un_useful: It is not useful
+    action: Действия
+    Asked: Спросил
+    asked: спросил
+    update: Обновлено
+    edit: Изменено
+    Views: Просмотры
+    Follow: Подписаться
+    Following: Подписан
+    follow_tip: Подпишитесь на вопрос, чтобы получать уведомления
+    answered: отвечено
+    closed_in: Закрыто
+    show_exist: Показать существующий вопрос.
+    useful: Полезный
+    question_useful: Это полезно и понятно
+    question_un_useful: Это непонятно или не полезно
+    question_bookmark: Добавьте этот вопрос в закладки
+    answer_useful: Это полезно
+    answer_un_useful: Это не полезно
     answers:
-      title: Answers
-      score: Score
-      newest: Newest
-      btn_accept: Accept
-      btn_accepted: Accepted
+      title: Ответы
+      score: Счёт
+      newest: Новые
+      btn_accept: Подтвердить
+      btn_accepted: Подтверждено
     write_answer:
-      title: Your Answer
+      title: Твои Ответы
       btn_name: Опубликовать свой ответ
       add_another_answer: Добавить другой ответ
-      confirm_title: Continue to answer
-      continue: Continue
+      confirm_title: Продолжайте для ответа
+      continue: Продолжить
       confirm_info: >-
         <p>Вы уверены, что хотите добавить другой ответ?</p><p>Вы можете использовать ссылку редактирования для уточнения и улучшения существующего ответа.</p>
-      empty: Answer cannot be empty.
-      characters: content must be at least 6 characters in length.
+      empty: Ответ не может быть пустым
+      characters: Контент должен быть длинее 6 символов.
       tips:
-        header_1: Thanks for your answer
-        li1_1: Please be sure to <strong>answer the question</strong>. Provide details and share your research.
+        header_1: Спасибо за ответ
+        li1_1: Пожалуйста, обязательно <strong> ответьте на вопрос</strong>. Предоставьте подробную информацию и поделитесь своими исследованиями.
         li1_2: Back up any statements you make with references or personal experience.
         header_2: But <strong>avoid</strong> ...
         li2_1: Asking for help, seeking clarification, or responding to other answers.
