@@ -1078,154 +1078,154 @@ ui:
       tips:
         header_1: Спасибо за ответ
         li1_1: Пожалуйста, обязательно <strong> ответьте на вопрос</strong>. Предоставьте подробную информацию и поделитесь своими исследованиями.
-        li1_2: Back up any statements you make with references or personal experience.
-        header_2: But <strong>avoid</strong> ...
-        li2_1: Asking for help, seeking clarification, or responding to other answers.
+        li1_2: Подкрепляйте любые сделанные вами заявления ссылками или личным опытом.
+        header_2: Но <strong>избегайте</strong> ...
+        li2_1: Спрашиваю о помощи, ищу разъяснений или отвечаю на другие ответы.
     reopen:
-      confirm_btn: Reopen
-      title: Reopen this post
-      content: Are you sure you want to reopen?
+      confirm_btn: Открыть
+      title: Открыть этот пост
+      content: Вы уверены, что хотите открыть?
     pin:
-      title: Pin this post
-      content: Are you sure you wish to pinned globally? This post will appear at the top of all post lists.
-      confirm_btn: Pin
+      title: Закрепите этот пост
+      content: Вы уверены, что хотите закрепить глобально? Это сообщение появится вверху всех списков сообщений.
+      confirm_btn: Закрепить
   delete:
-    title: Delete this post
+    title: Удалить этот пост
     question: >-
-      We do not recommend <strong>deleting questions with answers</strong> because doing so deprives future readers of this knowledge.</p><p>Repeated deletion of answered questions can result in your account being blocked from asking. Are you sure you wish to delete?
+      Мы не рекомендуем <strong>удалять вопросы с ответами</strong>, поскольку это лишает будущих читателей этих знаний.</p><p>Повторное удаление вопросов с ответами может привести к блокировке вашей учетной записи. Вы уверены, что хотите удалить?
     answer_accepted: >-
-      <p>We do not recommend <strong>deleting accepted answer</strong> because doing so deprives future readers of this knowledge. </p> Repeated deletion of accepted answers can result in your account being blocked from answering. Are you sure you wish to delete?
-    other: Are you sure you wish to delete?
-    tip_answer_deleted: This answer has been deleted
+      <p>Мы не рекомендуем <strong>удалять принятые ответы</strong>, поскольку это лишает будущих читателей этих знаний. </p> Повторное удаление принятых ответов может привести к блокировке вашей учетной записи для ответов. Вы уверены, что хотите удалить?
+    other: Вы уверены, что хотите удалить?
+    tip_answer_deleted: Этот ответ был удалён
   btns:
-    confirm: Confirm
-    cancel: Cancel
-    edit: Edit
-    save: Save
-    delete: Delete
-    login: Log in
-    signup: Sign up
-    logout: Log out
-    verify: Verify
+    confirm: Подтвердить
+    cancel: Отменить
+    edit: Изменить
+    save: Сохранить
+    delete: Удалить
+    login: Войти
+    signup: Зарегестрироваться
+    logout: Выйти
+    verify: Проверить
     add_question: Добавить вопрос
     add_article: Добавить статью
-    approve: Approve
-    reject: Reject
-    skip: Skip
-    discard_draft: Discard draft
-    pinned: Pinned
-    all: All
-    question: Question
-    answer: Answer
-    comment: Comment
-    refresh: Refresh
-    resend: Resend
+    approve: Одобрить
+    reject: Отклонять
+    skip: Пропустить
+    discard_draft: Удалить черновик
+    pinned: Закреплено
+    all: Всё
+    question: Вопрос
+    answer: Ответ
+    comment: Прокомментировать
+    refresh: Обновить
+    resend: Отправить заново
   search:
     title: Результаты поиска
     keywords: Ключевые слова
-    options: Options
-    follow: Follow
-    following: Following
-    counts: "{{count}} Results"
-    more: More
+    options: Настройки
+    follow: Подписаться
+    following: Подписан
+    counts: "{{count}} Результатов"
+    more: Больше
     sort_btns:
-      relevance: Relevance
-      newest: Newest
-      active: Active
-      score: Score
-      more: More
+      relevance: Актуальные
+      newest: Новые
+      active: Активные
+      score: По рейтингу
+      more: Больше
     tips:
-      title: Advanced Search Tips
-      tag: "<1>[tag]</1> search withing a tag"
-      user: "<1>user:username</1> search by author"
-      answer: "<1>answers:0</1> unanswered questions"
-      score: "<1>score:3</1> posts with a 3+ score"
-      question: "<1>is:question</1> search questions"
-      is_answer: "<1>is:answer</1> search answers"
-    empty: We couldn't find anything. <br /> Try different or less specific keywords.
+      title: Советы по расширенному поиску
+      tag: "<1>[tag]</1> посик с помощью тега"
+      user: "<1>user:username</1> поиск по автору"
+      answer: "<1>answers:0</1> неотвеченные вопросы"
+      score: "<1>score:3</1> Посты с рейтингом 3+"
+      question: "<1>is:question</1> искать вопрос"
+      is_answer: "<1>is:answer</1> искать ответы"
+    empty: Мы не можем ничего найти <br /> Попытайтесь использовать менее специфичные слова.
   share:
     name: Поделиться
     copy: Скопировать ссылку
-    via: Share post via...
+    via: Поделитесь постом через...
     copied: Скопировано
-    facebook: Share to Facebook
-    twitter: Share to Twitter
-  cannot_vote_for_self: You can't vote for your own post.
+    facebook: Поделитесь постом через Facebook
+    twitter: Поделитесь постом через Twitter
+  cannot_vote_for_self: Вы не можете проголосовать за свой собственный пост.
   modal_confirm:
     title: Ошибка...
   account_result:
-    success: Your new account is confirmed; you will be redirected to the home page.
-    link: Continue to homepage
+    success: Ваш новый аккаунт подтверждён; вы будете перенаправлены на главную страницу.
+    link: Продолжить на главной странице
     invalid: >-
-      Sorry, this account confirmation link is no longer valid. Perhaps your account is already active?
-    confirm_new_email: Your email has been updated.
+      Извините, эта ссылка для подтверждения учетной записи больше недействительна. Возможно, ваша учетная запись уже активна?
+    confirm_new_email: Ваш email был обновлён.
     confirm_new_email_invalid: >-
-      Sorry, this confirmation link is no longer valid. Perhaps your email was already changed?
+      Извините, эта ссылка для подтверждения больше недействительна. Возможно, ваш адрес электронной почты уже был изменен?
   unsubscribe:
     page_title: Отписаться
-    success_title: Unsubscribe Successful
-    success_desc: You have been successfully removed from this subscriber list and won't receive any further emails from us.
-    link: Change settings
+    success_title: Отмена подписки прошла успешно
+    success_desc: Вы были успешно удалены из этого списка подписчиков и больше не будете получать от нас никаких электронных писем.
+    link: Измените настройки
   question:
-    following_tags: Following Tags
+    following_tags: Следите за тегами
     edit: Редактировать
     save: Сохранить
-    follow_tag_tip: Follow tags to curate your list of questions.
+    follow_tag_tip: Подпишитесь на тег, чтобы составить свой список вопросов.
     hot_questions: Самые популярные вопросы
     all_questions: Все вопросы
-    x_questions: "{{ count }} Questions"
-    x_answers: "{{ count }} answers"
+    x_questions: "{{ count }} Вопросы"
+    x_answers: "{{ count }} ответы"
     questions: Вопросы
     answers: Ответы
-    newest: Newest
-    active: Active
-    frequent: Frequent
-    score: Score
-    unanswered: Unanswered
-    modified: modified
-    answered: answered
-    asked: asked
-    closed: closed
-    follow_a_tag: Follow a tag
-    more: More
+    newest: Новые
+    active: Активные
+    frequent: Частый
+    score: По рейтингу
+    unanswered: Без ответа
+    modified: изменено
+    answered: отвечено
+    asked: спросил
+    closed: закрытый
+    follow_a_tag: Подписаться на тег
+    more: Больше
   personal:
-    overview: Overview
-    answers: Answers
-    answer: answer
-    questions: Questions
-    question: question
-    bookmarks: Bookmarks
-    reputation: Reputation
-    comments: Comments
-    votes: Votes
-    newest: Newest
-    score: Score
-    edit_profile: Edit profile
-    visited_x_days: "Visited {{ count }} days"
-    viewed: Viewed
-    joined: Joined
-    last_login: Seen
-    about_me: About Me
+    overview: Обзор
+    answers: Ответы
+    answer: ответ
+    questions: Вопросы
+    question: вопрос
+    bookmarks: Закладки
+    reputation: Репутация
+    comments: Комментарии
+    votes: Голоса
+    newest: Новые
+    score: Рейтинг
+    edit_profile: Изменить профиль
+    visited_x_days: "Посещено {{ count }} дней(я) назад"
+    viewed: Рассматриваемый
+    joined: Присоединился
+    last_login: Просмотрено
+    about_me: Обо мне
     about_me_empty: "// Hello, World !"
-    top_answers: Top Answers
-    top_questions: Top Questions
-    stats: Stats
-    list_empty: No posts found.<br />Perhaps you'd like to select a different tab?
-    accepted: Accepted
-    answered: answered
-    asked: asked
-    downvoted: downvoted
-    mod_short: MOD
-    mod_long: Moderators
-    x_reputation: reputation
-    x_votes: votes received
-    x_answers: answers
-    x_questions: questions
+    top_answers: Лучшие ответы
+    top_questions: Лучшие вопросы
+    stats: Статистика
+    list_empty: Посты не найдены.<br />Возможно, вы хотели бы выбрать другую вкладку?
+    accepted: Принято
+    answered: отвечено
+    asked: спрошено
+    downvoted: проголосовано против
+    mod_short: модификация
+    mod_long: Модераторы
+    x_reputation: репутация
+    x_votes: полученные голоса
+    x_answers: ответы
+    x_questions: вопросы
   install:
-    title: Answer
-    next: Next
-    done: Done
-    config_yaml_error: Can't create the config.yaml file.
+    title: Ответ
+    next: Следующий
+    done: Сделано
+    config_yaml_error: Не создан config.yaml file.
     lang:
       label: Please choose a language
     db_type:
@@ -1307,10 +1307,10 @@ ui:
     db_failed_desc: >-
       This either means that the database information in your <1>config.yaml</1> file is incorrect or that contact with the database server could not be established. This could mean your host's database server is down.
   counts:
-    views: views
-    votes: votes
-    answers: answers
-    accepted: Accepted
+    views: просмотры
+    votes: голоса
+    answers: ответы
+    accepted: Принято
   page_error:
     http_error: HTTP Error {{ code }}
     desc_403: You don't have permission to access this page.
@@ -1318,36 +1318,36 @@ ui:
     desc_50X: The server encountered an error and could not complete your request.
     back_home: Back to homepage
   page_maintenance:
-    desc: "We are under maintenance, we'll be back soon."
+    desc: "Мы в разработке, скоро вернемся".
   nav_menus:
     dashboard: Панель управления
-    contents: Contents
-    questions: Questions
-    answers: Answers
-    users: Users
-    flags: Flags
-    settings: Settings
-    general: General
-    interface: Interface
+    contents: Содержание
+    questions: Вопросы
+    answers: Ответы
+    users: Пользователи
+    flags: Флаги
+    settings: Настройки
+    general: Общие
+    interface: Интерфейс
     smtp: SMTP
     branding: Branding
     legal: Legal
-    write: Write
+    write: Написать
     tos: Terms of Service
     privacy: Privacy
     seo: SEO
-    customize: Customize
-    themes: Themes
+    customize: Кастомизировать
+    themes: Темы
     css_html: CSS/HTML
     login: Login
-    privileges: Privileges
+    privileges: Привелегии
     plugins: Плагины
     installed_plugins: Установленные плагины
   website_welcome: Добро пожаловать на {{site_name}}
   user_center:
     login: Login
-    qrcode_login_tip: Please use {{ agentName }} to scan the QR code and log in.
-    login_failed_email_tip: Login failed, please allow this app to access your email information before try again.
+    qrcode_login_tip: Пожалуйста используйте {{ agentName }} просканируйте QR code и войдите.
+    login_failed_email_tip: Ошибка входа, подтвердите email.
   admin:
     admin_header:
       title: Admin
@@ -1360,204 +1360,204 @@ ui:
       comments: "Комментарии:"
       votes: "Голоса:"
       active_users: "Активные пользователи:"
-      flags: "Flags:"
-      site_health_status: Site Health Status
+      flags: "Флаги:"
+      site_health_status: Статус сайта
       version: "Версия:"
       https: "HTTPS:"
-      uploading_files: "Uploading files:"
+      uploading_files: "Загрузка файлов:"
       smtp: "SMTP:"
       timezone: "Часовой пояс:"
-      system_info: System Info
-      storage_used: "Storage used:"
-      uptime: "Uptime:"
+      system_info: Системная информация
+      storage_used: "Используемое хранилище:"
+      uptime: "Рабочее время:"
       answer_links: Answer Links
-      documents: Documents
+      documents: Документы
       feedback: Feedback
-      support: Support
-      review: Review
-      config: Config
-      update_to: Update to
-      latest: Latest
-      check_failed: Check failed
+      support: Поддержка
+      review: Пересмотр
+      config: Конфигурация
+      update_to: Обновление до
+      latest: Последнее
+      check_failed: Проверка провалена
       "yes": "Yes"
       "no": "No"
-      not_allowed: Not allowed
-      allowed: Allowed
-      enabled: Enabled
-      disabled: Disabled
+      not_allowed: Не разрешено
+      allowed: Разрешено
+      enabled: Включенный
+      disabled: Выключенный
     flags:
-      title: Flags
-      pending: Pending
-      completed: Completed
-      flagged: Flagged
-      flagged_type: Flagged {{ type }}
-      created: Created
-      action: Action
-      review: Review
+      title: Флаги
+      pending: Ожидаемый
+      completed: Завершенный
+      flagged: Флагировано
+      flagged_type: Тип флага - {{ type }}
+      created: Создано
+      action: Действие
+      review: Пересмотр
     change_modal:
-      title: Change user status to...
-      btn_cancel: Cancel
-      btn_submit: Submit
-      normal_name: normal
-      normal_desc: A normal user can ask and answer questions.
-      suspended_name: suspended
-      suspended_desc: A suspended user can't log in.
-      deleted_name: deleted
-      deleted_desc: "Delete profile, authentication associations."
-      inactive_name: inactive
-      inactive_desc: An inactive user must re-validate their email.
-      confirm_title: Delete this user
+      title: Измените статус пользователя на...
+      btn_cancel: Отменено
+      btn_submit: Отправлено
+      normal_name: нормальное
+      normal_desc: Нормальный пользователь может спрашивать и отвечать на вопросы.
+      suspended_name: приостановленное
+      suspended_desc: Приостановленные пользователи не могут войти.
+      deleted_name: удалено
+      deleted_desc: "Удалённый профиль, ассоциации аутентификации."
+      inactive_name: неактивный
+      inactive_desc: Неактивный пользователь должен повторно подтвердить свою электронную почту.
+      confirm_title: Удалить этого пользователя
       confirm_content: Вы уверены, что хотите удалить этого пользователя? Это действие необратимо!
-      confirm_btn: Delete
+      confirm_btn: Удалить
       msg:
         empty: Пожалуйста, выберите причину.
     status_modal:
-      title: "Change {{ type }} status to..."
-      normal_name: normal
-      normal_desc: A normal post available to everyone.
-      closed_name: closed
-      closed_desc: "A closed question can't answer, but still can edit, vote and comment."
-      deleted_name: deleted
-      deleted_desc: This post will be deleted.
-      btn_cancel: Cancel
-      btn_submit: Submit
-      btn_next: Next
+      title: "Изменить {{ type }} статус на..."
+      normal_name: нормальный
+      normal_desc: Обычный пост, доступный каждому.
+      closed_name: закрыто
+      closed_desc: "На закрытый вопрос нельзя ответить, но все равно можно редактировать, голосовать и комментировать".
+      deleted_name: удалено
+      deleted_desc: Этот пост будет удалён.
+      btn_cancel: Отменено
+      btn_submit: Отправлено
+      btn_next: Следующие
     user_role_modal:
-      title: Change user role to...
-      btn_cancel: Cancel
-      btn_submit: Submit
+      title: Изменить роль пользователя на...
+      btn_cancel: Отменить
+      btn_submit: Отправить
     new_password_modal:
-      title: Set new password
+      title: Поставить новый пароль
       form:
         fields:
           password:
             label: Пароль
-            text: The user will be logged out and need to login again.
-            msg: Password must be at 8-32 characters in length.
-      btn_cancel: Cancel
-      btn_submit: Submit
+            text: Пользователь отключён от системы, и ему нужно будет снова войти в систему.
+            msg: Пароль должен быть от 8 до 32 символов.
+      btn_cancel: Отменить
+      btn_submit: Отправить
     user_modal:
-      title: Add new user
+      title: Добавить нового пользователя
       form:
         fields:
           users:
-            label: Bulk add user
+            label: Массовое добавление пользователей
             placeholder: "John Smith, john@example.com, BUSYopr2\nAlice, alice@example.com, fpDntV8q"
             text: Separate “name, email, password” with commas. One user per line.
-            msg: "Please enter the user's email, one per line."
+            msg: "Пожалуйста, введите адрес электронной почты пользователя, по одному на строку."
           display_name:
-            label: Display name
-            msg: Display name must be at 4-30 characters in length.
+            label: Отображаемое имя
+            msg: Отображаемое имя должно быть от 8 до 32 символов.
           email:
             label: Email
-            msg: Email is not valid.
+            msg: Email недействителен.
           password:
-            label: Password
-            msg: Password must be at 8-32 characters in length.
-      btn_cancel: Cancel
-      btn_submit: Submit
+            label: Пароль
+            msg: Пароль должен быть от 8 до 32 символов.
+      btn_cancel: Отменить
+      btn_submit: Отправить
     users:
-      title: Users
-      name: Name
+      title: Пользователи
+      name: Имя
       email: Email
-      reputation: Reputation
+      reputation: Репутация
       created_at: Дата создания
-      delete_at: Deleted Time
-      suspend_at: Suspended Time
-      status: Status
-      role: Role
-      action: Action
-      change: Change
-      all: All
-      staff: Staff
-      more: More
-      inactive: Inactive
-      suspended: Suspended
-      deleted: Deleted
-      normal: Normal
-      Moderator: Moderator
-      Admin: Admin
-      User: User
+      delete_at: Удалённое время
+      suspend_at: Приостановленно время
+      status: Статус
+      role: Роль
+      action: Действия
+      change: Изменить
+      all: Все
+      staff: Персонал
+      more: Больше
+      inactive: Неактивный
+      suspended: Приостановлено
+      deleted: Удалено
+      normal: Нормальный
+      Moderator: Модератор
+      Admin: Админ
+      User: Пользователь
       filter:
-        placeholder: "Filter by name, user:id"
-      set_new_password: Set new password
-      change_status: Change status
-      change_role: Change role
-      show_logs: Show logs
-      add_user: Add user
+        placeholder: "Фильтровать по имени, user:id"
+      set_new_password: Поставить новый пароль
+      change_status: Изменить статус
+      change_role: Изменить роль
+      show_logs: Показать logs
+      add_user: Добавить пользователя
     questions:
-      page_title: Questions
-      normal: Normal
-      closed: Closed
-      deleted: Deleted
-      post: Post
-      votes: Votes
-      answers: Answers
-      created: Created
-      status: Status
-      action: Action
-      change: Change
+      page_title: Вопросы
+      normal: Нормальный
+      closed: Закрыто
+      deleted: Удалено
+      post: Пост
+      votes: Голоса
+      answers: Ответы
+      created: Создано
+      status: Статус
+      action: Действия
+      change: Изменения
       filter:
-        placeholder: "Filter by title, question:id"
+        placeholder: "Фильтровать по заголовку, question:id"
     answers:
-      page_title: Answers
-      normal: Normal
-      deleted: Deleted
-      post: Post
-      votes: Votes
-      created: Created
-      status: Status
-      action: Action
-      change: Change
+      page_title: Ответы
+      normal: Нормальный
+      deleted: Удалено
+      post: Пост
+      votes: Голоса
+      created: Создано
+      status: Статус
+      action: Действие
+      change: Изменить
       filter:
-        placeholder: "Filter by title, answer:id"
+        placeholder: "Фильтровать по заголовку, answer:id"
     general:
-      page_title: General
+      page_title: Общие
       name:
-        label: Site name
+        label: Имя сайта
         msg: Название сайта не может быть пустым.
         text: "Название сайта, используемое в теге title."
       site_url:
         label: URL-адрес сайта
-        msg: Site url cannot be empty.
+        msg: Сайт url не может быть пустым.
         validate: Пожалуйста, введите корректный URL.
-        text: The address of your site.
+        text: Адрес твоего сайта.
       short_desc:
-        label: Short site description
-        msg: Short site description cannot be empty.
-        text: "Short description, as used in the title tag on homepage."
+        label: Краткое описание сайта
+        msg: Краткое описание сайта не может быть пустым.
+        text: "Краткое описание сайта такое же, как используется в теге заголовка на домашней странице."
       desc:
-        label: Site description
-        msg: Site description cannot be empty.
-        text: "Describe this site in one sentence, as used in the meta description tag."
+        label: Описание сайта
+        msg: Описание сайта не может быть пустым.
+        text: "Опишите этот сайт одним предложением, как используется в теге meta description".
       contact_email:
-        label: Contact email
-        msg: Contact email cannot be empty.
-        validate: Contact email is not valid.
-        text: Email address of key contact responsible for this site.
+        label: Контактный email
+        msg: Контактный email не может быть пустым.
+        validate: Некоректный контактный email.
+        text: Адрес электронной почты ключевого контактного лица, ответственного за этот сайт.
     interface:
-      page_title: Interface
+      page_title: Интерфейс
       language:
-        label: Interface language
-        msg: Interface language cannot be empty.
-        text: User interface language. It will change when you refresh the page.
+        label: Язык интерфейса
+        msg: Язык интерфейса не может быть пустым.
+        text: Язык интерфейса изменится после обновления страницы.
       time_zone:
         label: Часовой пояс
-        msg: Timezone cannot be empty.
-        text: Choose a city in the same timezone as you.
+        msg: Часовой пояс не может быть пустым.
+        text: Выберите город в таком же часовом поясе как вы.
     smtp:
       page_title: SMTP
       from_email:
         label: From email
-        msg: From email cannot be empty.
-        text: The email address which emails are sent from.
+        msg: From email не может быть пустым.
+        text: Адрес электронной почты, с которого отправляются электронные письма.
       from_name:
         label: From name
-        msg: From name cannot be empty.
-        text: The name which emails are sent from.
+        msg: From name не может быть пустым.
+        text: The name which emails был отправлен.
       smtp_host:
         label: SMTP host
-        msg: SMTP host cannot be empty.
+        msg: SMTP host не может быть пустым.
         text: Your mail server.
       encryption:
         label: Encryption
@@ -1769,21 +1769,21 @@ ui:
     comment: Комментарий
     no_data: "We couldn't find anything."
   users:
-    title: Users
-    users_with_the_most_reputation: Users with the highest reputation scores this week
-    users_with_the_most_vote: Users who voted the most this week
-    staffs: Our community staff
-    reputation: reputation
-    votes: votes
+    title: Пользователи
+    users_with_the_most_reputation: Пользователи с самой высокой репутацией на этой неделе
+    users_with_the_most_vote: Пользователи, которые больше всего проголосовали на этой неделе
+    staffs: Наш общественный персонал
+    reputation: репутация
+    votes: голоса
   prompt:
-    leave_page: Are you sure you want to leave the page?
-    changes_not_save: Your changes may not be saved.
+    leave_page: Вы уверены, что хотите покинуть страницу?
+    changes_not_save: Изменения не могут быть изменены.
   draft:
-    discard_confirm: Are you sure you want to discard your draft?
+    discard_confirm: Вы уверены, что хотите отменить черновик?
   messages:
-    post_deleted: This post has been deleted.
-    post_pin: This post has been pinned.
-    post_unpin: This post has been unpinned.
-    post_hide_list: This post has been hidden from list.
-    post_show_list: This post has been shown to list.
-    post_reopen: This post has been reopened.
+    post_deleted: Пост был удалён
+    post_pin: Пост был закреплён
+    post_unpin: Пост был откреплён
+    post_hide_list: Пост был скрыт из листа.
+    post_show_list: Пост был открыт в лист.
+    post_reopen: Пост был переоткрыт
