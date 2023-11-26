@@ -32,9 +32,9 @@ services:
       - DB_TYPE=mysql
       - DB_USERNAME=root
       - DB_PASSWORD=password
-      - DB_HOST=172.19.0.2:3306
+      - DB_HOST=172.18.0.2:3306
       - DB_NAME=answer
-      - LANGUAGE=en_US
+      - LANGUAGE=ru_RU
       - SITE_NAME=answer-test
       - SITE_URL=http://localhost
       - CONTACT_EMAIL=test@answer.com
