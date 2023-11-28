@@ -464,7 +464,7 @@ ui:
   how_to_format:
     title: Как отформатировать
     desc: >-
-      <ul class="mb-0"><li><p class="mb-2">to make links</p><pre class="mb-2"><code>&lt;https://url.com&gt;<br/><br/>[Title](https://url.com)</code></pre></li><li><p class="mb-2">put returns between paragraphs</p></li><li><p class="mb-2"><em>_italic_</em> or **<strong>bold</strong>**</p></li><li><p class="mb-2">indent code by 4 spaces</p></li><li><p class="mb-2">quote by placing <code>&gt;</code> at start of line</p></li><li><p class="mb-2">backtick escapes <code>`like _this_`</code></p></li><li><p class="mb-2">create code fences with backticks <code>`</code></p><pre class="mb-0"><code>```<br/>code here<br/>```</code></pre></li></ul>
+      <ul class="mb-0"><li><p class="mb-2">чтобы сделать ссылку</p><pre class="mb-2"><code>&lt;https://url.com&gt;<br/><br/>[Title](https://url.com)</code></pre></li><li><p class="mb-2">используйте параграф html для выделения блока текста</p></li><li><p class="mb-2"><em>_italic_</em> or **<strong>bold</strong>**</p></li><li><p class="mb-2">сделайте отступ в коде на 4 пробела</p></li><li><p class="mb-2">используйте <code>&gt;</code> в начале строки для выделения</p></li><li><p class="mb-2">выделить слова <code>`like _this_`</code></p></li><li><p class="mb-2">для кода <code>`</code></p><pre class="mb-0"><code>```<br/>code here<br/>```</code></pre></li></ul>
   pagination:
     prev: Предыдущий
     next: Следующий
@@ -774,7 +774,8 @@ ui:
           msg:
             empty: Основа не может быть пустой.
         tags:
-          label: Тэги
+          label: Тэги, для создания вопроса добавте тэг questions
+          labelArticle: Тэги, для создания вопроса добавте тэг articles
           msg:
             empty: Тэги не могут быть пустыми.
         answer:
@@ -828,7 +829,7 @@ ui:
     add_btn: Добавить тэг
     create_btn: Создать новый тег
     search_tag: Поиск тега
-    hint: "Опишите, о чем ваш вопрос, требуется хотя бы один тег".
+    hint: "Опишите, о чем ваш вопрос, требуется хотя бы один тег."
     no_result: Тэги не отмечены
     tag_required_text: Обязательный тег (хотя бы один)
   header:
@@ -860,7 +861,7 @@ ui:
   inactive:
     first: >-
       Вы почти закончили! Мы отправили письмо с активацией по адресу <bold>{{mail}}</bold>. Пожалуйста, следуйте инструкциям в письме, чтобы активировать свою учетную запись.
-    info: "Если оно не пришло, проверьте свою папку со спамом".
+    info: "Если оно не пришло, проверьте свою папку со спамом"
     another: >-
       Мы отправили другое письмо активации на <bold>{{mail}}</bold>. Это может занять несколько минут, прежде чем оно придет; обязательно проверьте свою папку со спамом.
     btn_name: Повторно отправить письмо с активацией
@@ -1318,7 +1319,7 @@ ui:
     desc_50X: The server encountered an error and could not complete your request.
     back_home: Back to homepage
   page_maintenance:
-    desc: "Мы в разработке, скоро вернемся".
+    desc: "Мы в разработке, скоро вернемся"
   nav_menus:
     dashboard: Панель управления
     contents: Содержание
@@ -1416,7 +1417,7 @@ ui:
       normal_name: нормальный
       normal_desc: Обычный пост, доступный каждому.
       closed_name: закрыто
-      closed_desc: "На закрытый вопрос нельзя ответить, но все равно можно редактировать, голосовать и комментировать".
+      closed_desc: "На закрытый вопрос нельзя ответить, но все равно можно редактировать, голосовать и комментировать"
       deleted_name: удалено
       deleted_desc: Этот пост будет удалён.
       btn_cancel: Отменено
@@ -1529,7 +1530,7 @@ ui:
       desc:
         label: Описание сайта
         msg: Описание сайта не может быть пустым.
-        text: "Опишите этот сайт одним предложением, как используется в теге meta description".
+        text: "Опишите этот сайт одним предложением, как используется в теге meta description"
       contact_email:
         label: Контактный email
         msg: Контактный email не может быть пустым.

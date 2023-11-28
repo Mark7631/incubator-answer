@@ -435,7 +435,7 @@ const Ask = () => {
               </Form.Control.Feedback>
             </Form.Group>
             <Form.Group controlId="tags" className="my-3">
-              <Form.Label>{t('form.fields.tags.label')}</Form.Label>
+              <Form.Label>{t('form.fields.tags.labelArticle')}</Form.Label>
               <Form.Control
                 defaultValue={JSON.stringify(formData.tags.value)}
                 isInvalid={formData.tags.isInvalid}
