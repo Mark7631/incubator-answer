@@ -294,6 +294,9 @@ const Index: FC<Props> = ({ visible = false, data, callback }) => {
                 </p>
                 <ul className="mb-0">
                   <li>{t('tips.li2_1')}</li>
+                  <li>{t('tips.li2_2')}</li>
+                  <li>{t('tips.li2_3')}</li>
+                  <li>{t('tips.li2_4')}</li>
                 </ul>
               </Alert>
             </>

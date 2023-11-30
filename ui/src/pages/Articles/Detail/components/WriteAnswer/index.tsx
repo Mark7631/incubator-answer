@@ -276,16 +276,6 @@ const Index: FC<Props> = ({ visible = false, data, callback }) => {
                 onClose={() => setShowTips(false)}
                 dismissible
                 className="mt-3">
-                <p>{t('tips.header_1')}</p>
-                <ul>
-                  <li>
-                    <Trans
-                      i18nKey="question_detail.write_answer.tips.li1_1"
-                      components={{ strong: <strong /> }}
-                    />
-                  </li>
-                  <li>{t('tips.li1_2')}</li>
-                </ul>
                 <p>
                   <Trans
                     i18nKey="question_detail.write_answer.tips.header_2"
@@ -294,6 +284,9 @@ const Index: FC<Props> = ({ visible = false, data, callback }) => {
                 </p>
                 <ul className="mb-0">
                   <li>{t('tips.li2_1')}</li>
+                  <li>{t('tips.li2_2')}</li>
+                  <li>{t('tips.li2_3')}</li>
+                  <li>{t('tips.li2_4')}</li>
                 </ul>
               </Alert>
             </>

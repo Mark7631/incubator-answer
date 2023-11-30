@@ -228,7 +228,7 @@ const Header: FC = () => {
               <Nav className="d-flex align-items-center flex-lg-nowrap">
                 <Nav.Item className="me-3">
                   <Link
-                    to={writeUrl}
+                    to={askUrl}
                     className={classnames('text-capitalize text-nowrap btn', {
                       'btn-light': navbarStyle !== 'theme-light',
                       'btn-primary': navbarStyle === 'theme-light',
@@ -239,7 +239,7 @@ const Header: FC = () => {
 
                 <Nav.Item className="me-3">
                   <Link
-                    to={askUrl}
+                    to={writeUrl}
                     className={classnames('text-capitalize text-nowrap btn', {
                       'btn-light': navbarStyle !== 'theme-light',
                       'btn-primary': navbarStyle === 'theme-light',

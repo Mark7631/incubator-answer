@@ -359,7 +359,7 @@ const Ask = () => {
     setFormData({ ...formData });
   };
   const bool = similarQuestions.length > 0 && !isEdit;
-  let pageTitle = t('ask_a_question', { keyPrefix: 'page_title' });
+  let pageTitle = t('write_an_article', { keyPrefix: 'page_title' });
   if (isEdit) {
     pageTitle = t('edit_question', { keyPrefix: 'page_title' });
   }
@@ -482,46 +482,6 @@ const Ask = () => {
                   </Button>
                 )}
               </div>
-            )}
-            {!isEdit && (
-              <>
-                <Form.Check
-                  className="mt-5"
-                  checked={checked}
-                  type="checkbox"
-                  label={t('answer_question')}
-                  onChange={(e) => setCheckState(e.target.checked)}
-                  id="radio-answer"
-                />
-                {checked && (
-                  <Form.Group controlId="answer" className="mt-4">
-                    <Form.Label>{t('form.fields.answer.label')}</Form.Label>
-                    <Editor
-                      value={formData.answer_content.value}
-                      onChange={handleAnswerChange}
-                      ref={editorRef2}
-                      className={classNames(
-                        'form-control p-0',
-                        focusType === 'answer' && 'focus',
-                      )}
-                      onFocus={() => {
-                        setForceType('answer');
-                      }}
-                      onBlur={() => {
-                        setForceType('');
-                      }}
-                    />
-                    <Form.Control
-                      type="text"
-                      isInvalid={formData.answer_content.isInvalid}
-                      hidden
-                    />
-                    <Form.Control.Feedback type="invalid">
-                      {formData.answer_content.errorMsg}
-                    </Form.Control.Feedback>
-                  </Form.Group>
-                )}
-              </>
             )}
             {checked && (
               <div className="mt-3">
