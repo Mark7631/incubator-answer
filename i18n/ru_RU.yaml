@@ -477,7 +477,7 @@ ui:
     create_tag: Создать тег
     edit_tag: Изменить тег
     ask_a_question: Добавить вопрос
-    write_an_article: Добавить вопрос
+    write_an_article: Добавить статью
     edit_question: Редактировать вопрос
     edit_answer: Редактировать ответ
     search: Поиск
@@ -1185,7 +1185,7 @@ ui:
     answers: Ответы
     newest: Новые
     active: Активные
-    frequent: Частый
+    frequent: Частые
     score: По рейтингу
     unanswered: Без ответа
     modified: изменено
