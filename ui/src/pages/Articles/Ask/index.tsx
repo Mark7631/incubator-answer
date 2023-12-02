@@ -98,9 +98,6 @@ const Ask = () => {
   const editorRef = useRef<EditorRef>({
     getHtml: () => '',
   });
-  const editorRef2 = useRef<EditorRef>({
-    getHtml: () => '',
-  });
 
   const { qid } = useParams();
   const navigate = useNavigate();
@@ -237,12 +234,6 @@ const Ask = () => {
     setFormData({
       ...formData,
       tags: { ...formData.tags, value, errorMsg: '' },
-    });
-
-  const handleAnswerChange = (value: string) =>
-    setFormData({
-      ...formData,
-      answer_content: { ...formData.answer_content, value, errorMsg: '' },
     });
 
   const handleSummaryChange = (evt: React.ChangeEvent<HTMLInputElement>) =>

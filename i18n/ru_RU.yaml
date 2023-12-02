@@ -777,7 +777,7 @@ ui:
             empty: Основа не может быть пустой.
         tags:
           label: Тэги, для создания вопроса добавте тэг questions
-          labelArticle: Тэги, для создания вопроса добавте тэг articles
+          labelArticle: Тэги, для создания статьи добавте тэг articles
           msg:
             empty: Тэги не могут быть пустыми.
         answer:
