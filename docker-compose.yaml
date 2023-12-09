@@ -26,7 +26,7 @@ x-uffizzi:
 services:
 
   answer:
-    image: incubatoranswer:latest
+    image: mark3915/incubatoranswer:latest
     environment:
       - AUTO_INSTALL=true
       - DB_TYPE=mysql
